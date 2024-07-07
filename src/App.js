@@ -1,4 +1,4 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
@@ -7,15 +7,12 @@ import Login from "./routes/login/Login";
 import Admin from "./routes/admin/Admin";
 
 function App() {
-  const [isLogin, setIsLogin] = useState(false);
-
-  function checkRegistration() {
-    setIsLogin(true);
-  }
+  // const [isLogin, setIsLogin] = useState(false);
 
   return (
     <div className="App">
-      <Header isLogin={isLogin} />
+      {/* <Header isLogin={isLogin} /> */}
+      <Header />
       <Routes>
         <Route path="/admin" element={<Admin />} />
         <Route path="/" element={<Login />} />

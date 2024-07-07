@@ -11,8 +11,8 @@ const Header = ({ isLogin }) => {
         <span>COIN</span>
       </Link>
 
-      {!isLogin && <span className="edu-name">Algoritm O'quv Markazi</span>}
-      {isLogin && (
+      {true && <span className="edu-name">Algoritm O'quv Markazi</span>}
+      {false && (
         <div className="coin-list__text">
           <div className="img">
             <img src="./assets/logo.png" alt="algoritm logo" />
@@ -20,9 +20,9 @@ const Header = ({ isLogin }) => {
           <span>Coin List</span>
         </div>
       )}
-      {!isLogin && <SocialNetwork />}
-      {isLogin && <Navbar />}
-      {!isLogin && (
+      {true && <SocialNetwork />}
+      {false && <Navbar />}
+      {true && (
         <Link to="result" className="result">
           Natijani ko'rish
         </Link>
