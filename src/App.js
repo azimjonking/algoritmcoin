@@ -8,6 +8,11 @@ import Admin from "./routes/admin/Admin";
 
 function App() {
   const [isLogin, setIsLogin] = useState(false);
+
+  function checkRegistration() {
+    setIsLogin(true);
+  }
+
   return (
     <div className="App">
       <Header isLogin={isLogin} />
