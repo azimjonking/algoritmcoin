@@ -1,0 +1,44 @@
+header {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 40px;
+}
+
+header .logo {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--text-color);
+}
+
+header .logo img {
+  width: 66px;
+}
+
+header .logo span {
+  font-size: 34px;
+  font-weight: 900;
+  letter-spacing: 7px;
+  font-family: monospace;
+}
+
+header .edu-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+header .result {
+  padding: 16px 48px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #e3ca5c;
+
+  border-radius: 16px;
+  border: 1px solid #e3ca5c;
+  background: rgba(227, 202, 92, 0.1);
+}

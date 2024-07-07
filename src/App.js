@@ -3,17 +3,17 @@ import { Routes, Route } from "react-router-dom";
 
 import "./App.css";
 import Header from "./components/header/Header";
-import Login from "./components/login/Login";
-import Home from "./components/routes/home/Home";
+import Login from "./routes/login/Login";
+import Admin from "./routes/admin/Admin";
 
 function App() {
-  const [isLogin, setIsLogin] = useState(true);
+  const [isLogin, setIsLogin] = useState(false);
   return (
     <div className="App">
-      {isLogin && <Header />}
+      <Header isLogin={isLogin} />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/admin" element={<Admin />} />
+        <Route path="/" element={<Login />} />
       </Routes>
     </div>
   );
