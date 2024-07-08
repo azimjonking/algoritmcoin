@@ -8,11 +8,10 @@ import Admin from "./routes/admin/Admin";
 
 function App() {
   // const [isLogin, setIsLogin] = useState(false);
-
+  let isLogin = false;
   return (
     <div className="App">
-      {/* <Header isLogin={isLogin} /> */}
-      <Header />
+      <Header isLogin={isLogin} />
       <Routes>
         <Route path="/admin" element={<Admin />} />
         <Route path="/" element={<Login />} />

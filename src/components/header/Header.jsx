@@ -5,7 +5,7 @@ import Navbar from "../navbar/Navbar";
 
 const Header = ({ isLogin }) => {
   return (
-    <header className="container">
+    <header>
       <Link to="/" className="logo">
         <img src="./assets/logo.png" alt="Algoritm" />
         <span>COIN</span>
@@ -20,9 +20,9 @@ const Header = ({ isLogin }) => {
           <span>Coin List</span>
         </div>
       )}
-      {true && <SocialNetwork />}
-      {false && <Navbar />}
-      {true && (
+      {!isLogin && <SocialNetwork />}
+      {isLogin && <Navbar />}
+      {!isLogin && (
         <Link to="result" className="result">
           Natijani ko'rish
         </Link>

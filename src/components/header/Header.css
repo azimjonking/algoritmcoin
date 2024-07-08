@@ -1,10 +1,15 @@
 header {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  width: 100%;
+  padding: 50px 5%;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 40px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 10;
 }
 
 header .logo {
@@ -24,12 +29,14 @@ header .logo span {
   font-weight: 900;
   letter-spacing: 7px;
   font-family: monospace;
+  user-select: none;
 }
 
 header .edu-name {
   font-size: 24px;
   font-weight: 600;
   color: var(--primary-color);
+  user-select: none;
 }
 
 header .result {

@@ -9,3 +9,29 @@
   width: 90%;
   margin: 0 auto;
 }
+
+.section-title {
+  font-size: var(--biggest-fs);
+  color: var(--text-color);
+  font-weight: 900;
+}
+
+.section-title span {
+  color: var(--main-color);
+}
+
+.section-subtitle {
+  margin-top: 15px;
+  font-size: var(--big-fs);
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.btn {
+  padding: 20px 65px;
+  text-align: center;
+  border-radius: 25px;
+  background: var(--main-color);
+  font-size: 27px;
+  color: #000;
+}
