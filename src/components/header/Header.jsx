@@ -23,9 +23,14 @@ const Header = ({ isLogin }) => {
       {!isLogin && <SocialNetwork />}
       {isLogin && <Navbar />}
       {!isLogin && (
-        <Link to="result" className="result">
-          Natijani ko'rish
-        </Link>
+        <>
+          <Link to="forget" className="forget">
+            Parolni unutdingizmi?
+          </Link>
+          <Link to="result" className="result">
+            Natijani ko'rish
+          </Link>
+        </>
       )}
     </header>
   );

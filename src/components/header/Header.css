@@ -8,7 +8,7 @@ header {
   position: fixed;
   top: 0;
   left: 0;
-  background: #000;
+  /* background: #000; */
   z-index: 10;
 }
 
@@ -30,22 +30,32 @@ header .logo span {
   letter-spacing: 7px;
   font-family: monospace;
   user-select: none;
+  font-family: "SF Pro black";
 }
 
 header .edu-name {
   font-size: 24px;
-  font-weight: 600;
   color: var(--primary-color);
   user-select: none;
+  font-family: "SF Pro regular";
 }
 
-header .result {
+header .result,
+header .forget {
   padding: 16px 48px;
   font-size: 16px;
-  font-weight: 700;
-  color: #e3ca5c;
+  font-family: "SF Pro medium";
+  border-radius: 18px;
+  letter-spacing: 1px;
+}
 
-  border-radius: 16px;
+header .forget {
+  color: var(--primary-color);
+
+  background: rgba(255, 255, 255, 0.1);
+}
+header .result {
+  color: #e3ca5c;
   border: 1px solid #e3ca5c;
   background: rgba(227, 202, 92, 0.1);
 }

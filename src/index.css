@@ -1,10 +1,33 @@
 /* @import url(https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@100;200;300;400;500;600;700&display=swap); */
 
+@font-face {
+  font-family: "SF Pro regular";
+  src: url("./fonts/SF-Pro-Display-Regular.otf");
+}
+@font-face {
+  font-family: "SF Pro black";
+  src: url("./fonts/SF-Pro-Display-Black.otf");
+}
+
+@font-face {
+  font-family: "SF Pro medium";
+  src: url("./fonts/SF-Pro-Display-Medium.otf");
+}
+
+@font-face {
+  font-family: "SF Pro semibold";
+  src: url("./fonts/SF-Pro-Display-Semibold.otf");
+}
+
+@font-face {
+  font-family: "SF Pro heavy";
+  src: url("./fonts/SF-Pro-Display-Heavy.otf");
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Source Serif Pro", serif; */
 }
 
 :root {

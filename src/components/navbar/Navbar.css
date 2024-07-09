@@ -5,7 +5,7 @@ nav ul {
 }
 
 nav ul li a {
-  padding: 10px 20px;
+  padding: 10px 20px 10px 12px;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -14,12 +14,24 @@ nav ul li a {
   color: var(--primary-color);
 }
 
-nav ul li a .icon {
-  font-size: 24px;
+nav ul li a.username {
+  padding: 10px 20px;
 }
 
 nav ul li a span {
+  font-family: "SF Pro regular";
   font-size: var(--small-fs);
+  transition: all 0.2s ease;
+  letter-spacing: 1px;
+}
+nav ul li a:hover {
+  color: #fff;
+  opacity: 1;
+}
+nav ul li a:hover path {
+  stroke: #fff;
+  opacity: 1;
+  transition: all 0.2s ease;
 }
 
 nav ul li a.userImg {
@@ -29,7 +41,7 @@ nav ul li a.userImg {
 nav ul li a.userImg img {
   width: 42px;
   height: 42px;
-  border-radius: 50%;
+  border-radius: 30%;
   object-fit: cover;
   object-position: top;
 }

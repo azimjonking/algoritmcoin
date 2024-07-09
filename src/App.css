@@ -13,7 +13,7 @@
 .section-title {
   font-size: var(--biggest-fs);
   color: var(--text-color);
-  font-weight: 900;
+  font-family: "SF Pro black";
 }
 
 .section-title span {
@@ -21,10 +21,9 @@
 }
 
 .section-subtitle {
-  margin-top: 15px;
   font-size: var(--big-fs);
   color: var(--text-color);
-  font-weight: 700;
+  font-family: "SF Pro medium";
 }
 
 .btn {
@@ -33,5 +32,6 @@
   border-radius: 25px;
   background: var(--main-color);
   font-size: 27px;
+  font-family: "SF Pro semibold";
   color: #000;
 }
