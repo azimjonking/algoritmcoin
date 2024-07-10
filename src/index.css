@@ -30,6 +30,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --text-color: #fff;
   --main-color: #e3ca5c;

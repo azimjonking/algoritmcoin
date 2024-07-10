@@ -10,7 +10,7 @@ const Admin = () => {
         <p className="section-subtitle">Страница администратора</p>
         <div className="admin-btns">
           <Link className="teachers-btn btn btn-primary" to="/teachers">
-            O'qtuvchilar ro'yhati
+            O'qituvchilar ro'yhati
           </Link>
           <Link className="students-btn btn btn-secondary" to="/students">
             O'quvchilar ro'yhati

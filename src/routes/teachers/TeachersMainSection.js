@@ -1,0 +1,35 @@
+import React from "react";
+import "./TeachersMainSection.css";
+import { FaArrowDown } from "react-icons/fa6";
+
+const TeachersMainSection = () => {
+  return (
+    <section className="teacher-main">
+      {/* info start */}
+      <div className="teacher-main__info">
+        <h1 className="section-title">
+          O'qtuvchilar <br />
+          Ro'yhati
+        </h1>
+        <p className="section-subtitle">Список учителей</p>
+        <a href="#teacher" className="teacher-main__btn btn btn-primary">
+          <span>Pastga suring</span>
+          <FaArrowDown className="scroll-icon" />
+        </a>
+      </div>
+      {/* info end */}
+
+      {/* img start */}
+      <div className="teacher-main__img">
+        <img src="./assets/teachers.png" alt="teachers" />
+      </div>
+      {/* img end */}
+
+      <div className="teacher-shadowImg">
+        <img src="./assets/teacherShadow.png" alt="shadow" />
+      </div>
+    </section>
+  );
+};
+
+export default TeachersMainSection;

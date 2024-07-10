@@ -1,11 +1,14 @@
 import React from "react";
-import "./Teacher.css";
+import "./Teachers.css";
+import TeachersMainSection from "./TeachersMainSection";
+import TeachersList from "../../components/teachersList/TeachersList";
 
 const Teachers = () => {
   return (
-    <div>
-      <h1>Teachers</h1>
-    </div>
+    <>
+      <TeachersMainSection />
+      <TeachersList />
+    </>
   );
 };
 
