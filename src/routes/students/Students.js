@@ -1,11 +1,14 @@
 import React from "react";
 import "./Students.css";
+import StudentsMainSection from './StudentsMainSection';
+import StudentsList from '../../components/studentsList/StudentsList';
 
 const Students = () => {
   return (
-    <div>
-      <h1>Students</h1>
-    </div>
+    <>
+      <StudentsMainSection />
+      <StudentsList />
+    </>
   );
 };
 
