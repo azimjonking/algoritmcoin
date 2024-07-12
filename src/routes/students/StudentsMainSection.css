@@ -62,8 +62,8 @@
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
   animation-timing-function: linear;
-  transform: translateY(-50px) rotateX(-50deg) rotateY(-50deg) rotateZ(-50deg)
-    scale(0.9);
+  transform: translateY(100vh) rotateX(50deg) rotateY(50deg) rotateZ(50deg)
+    scale(1.1);
 }
 
 .coin-1 {

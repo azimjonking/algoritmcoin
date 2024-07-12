@@ -1,0 +1,148 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "firstName": "Azimjon",
+      "lastName": "Jalilov",
+      "phone": "+998 90-597-79-55",
+      "subject": "IT",
+      "studentsCount": 25
+    },
+    {
+      "id": 2,
+      "firstName": "Jahongir",
+      "lastName": "Yusupov",
+      "phone": "+998 99-977-79-55",
+      "subject": "Eng, IT master",
+      "studentsCount": 1000
+    },
+    {
+      "id": 1,
+      "firstName": "Azimjon",
+      "lastName": "Jalilov",
+      "phone": "+998 90-597-79-55",
+      "subject": "IT",
+      "studentsCount": 25
+    },
+    {
+      "id": 2,
+      "firstName": "Jahongir",
+      "lastName": "Yusupov",
+      "phone": "+998 99-977-79-55",
+      "subject": "Eng, IT master",
+      "studentsCount": 1000
+    },
+    {
+      "id": 1,
+      "firstName": "Azimjon",
+      "lastName": "Jalilov",
+      "phone": "+998 90-597-79-55",
+      "subject": "IT",
+      "studentsCount": 25
+    },
+    {
+      "id": 2,
+      "firstName": "Jahongir",
+      "lastName": "Yusupov",
+      "phone": "+998 99-977-79-55",
+      "subject": "Eng, IT master",
+      "studentsCount": 1000
+    },
+    {
+      "id": 1,
+      "firstName": "Azimjon",
+      "lastName": "Jalilov",
+      "phone": "+998 90-597-79-55",
+      "subject": "IT",
+      "studentsCount": 25
+    },
+    {
+      "id": 2,
+      "firstName": "Jahongir",
+      "lastName": "Yusupov",
+      "phone": "+998 99-977-79-55",
+      "subject": "Eng, IT master",
+      "studentsCount": 1000
+    },
+    {
+      "id": 1,
+      "firstName": "Azimjon",
+      "lastName": "Jalilov",
+      "phone": "+998 90-597-79-55",
+      "subject": "IT",
+      "studentsCount": 25
+    },
+    {
+      "id": 2,
+      "firstName": "Jahongir",
+      "lastName": "Yusupov",
+      "phone": "+998 99-977-79-55",
+      "subject": "Eng, IT master",
+      "studentsCount": 1000
+    },
+    {
+      "id": 1,
+      "firstName": "Azimjon",
+      "lastName": "Jalilov",
+      "phone": "+998 90-597-79-55",
+      "subject": "IT",
+      "studentsCount": 25
+    },
+    {
+      "id": 2,
+      "firstName": "Jahongir",
+      "lastName": "Yusupov",
+      "phone": "+998 99-977-79-55",
+      "subject": "Eng, IT master",
+      "studentsCount": 1000
+    },
+    {
+      "id": 1,
+      "firstName": "Azimjon",
+      "lastName": "Jalilov",
+      "phone": "+998 90-597-79-55",
+      "subject": "IT",
+      "studentsCount": 25
+    },
+    {
+      "id": 2,
+      "firstName": "Jahongir",
+      "lastName": "Yusupov",
+      "phone": "+998 99-977-79-55",
+      "subject": "Eng, IT master",
+      "studentsCount": 1000
+    },
+    {
+      "id": 1,
+      "firstName": "Azimjon",
+      "lastName": "Jalilov",
+      "phone": "+998 90-597-79-55",
+      "subject": "IT",
+      "studentsCount": 25
+    },
+    {
+      "id": 2,
+      "firstName": "Jahongir",
+      "lastName": "Yusupov",
+      "phone": "+998 99-977-79-55",
+      "subject": "Eng, IT master",
+      "studentsCount": 1000
+    },
+    {
+      "id": 1,
+      "firstName": "Azimjon",
+      "lastName": "Jalilov",
+      "phone": "+998 90-597-79-55",
+      "subject": "IT",
+      "studentsCount": 25
+    },
+    {
+      "id": 2,
+      "firstName": "Jahongir",
+      "lastName": "Yusupov",
+      "phone": "+998 99-977-79-55",
+      "subject": "Eng, IT master",
+      "studentsCount": 1000
+    }
+  ]
+}

@@ -48,6 +48,10 @@ html {
   --small-fs: 19px;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 a {
   text-decoration: none;
 }
