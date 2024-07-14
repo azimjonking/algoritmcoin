@@ -1,5 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import "./Admin.css";
 
 const Admin = () => {
@@ -24,12 +26,12 @@ const Admin = () => {
             </p>
           </div>
           <div className="admin-statistics__img">
-            <img src="./assets/statistics.png" alt="statistics" />
+            <LazyLoadImage src="./assets/statistics.png" alt="statistics" />
           </div>
         </div>
       </div>
       <div className="admin-img">
-        <img src="./assets/folder.png" alt="folder" />
+        <LazyLoadImage src="./assets/folder.png" alt="folder" />
       </div>
     </section>
   );

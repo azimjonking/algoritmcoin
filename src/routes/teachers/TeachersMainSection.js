@@ -1,6 +1,8 @@
 import React from "react";
 import "./TeachersMainSection.css";
 import { FaArrowDown } from "react-icons/fa6";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const TeachersMainSection = () => {
   return (
@@ -21,7 +23,7 @@ const TeachersMainSection = () => {
 
       {/* img start */}
       <div className="teacher-main__img">
-        <img src="./assets/teachers.png" alt="teachers" />
+        <LazyLoadImage src="./assets/teachers.png" alt="teachers" effect='blur' />
       </div>
       {/* img end */}
 

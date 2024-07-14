@@ -1,12 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import "./Login.css";
 
 const Login = () => {
   return (
     <section className="login container">
       <div className="coin-bg">
-        <img src="./assets/coin.png" alt="coin" />
+        {/* <img src="./assets/coin.png" alt="coin" /> */}
+        <LazyLoadImage src="./assets/coin.png" alt="coin" effect="blur" />
       </div>
       <div className="login-header">
         <h1 className="section-title">
