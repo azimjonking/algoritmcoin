@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav>
       <ul>
         <li>
-          <Link>
+          <Link to="/addteacher">
             <svg
               width="26"
               height="26"

@@ -25,7 +25,7 @@ const Login = () => {
         <div className="login-form__container">
           <input type="text" placeholder="username" />
           <input type="password" placeholder="password" />
-          <button type="button" className="btn">
+          <button type="button" className="btn btn-primary">
             Kirish
           </button>
           <p>

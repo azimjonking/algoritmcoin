@@ -8,6 +8,8 @@ import Admin from "./routes/admin/Admin";
 import Teachers from "./routes/teachers/Teachers";
 import Students from "./routes/students/Students";
 import Statistics from './routes/statistics/Statistics';
+import AddTeacher from './routes/addTeacher/AddTeacher';
+import ForgotPassword from './routes/forgotPassword/ForgotPassword';
 
 function App() {
   // const [isLogin, setIsLogin] = useState(false);
@@ -21,6 +23,8 @@ function App() {
         <Route path="/teachers" element={<Teachers />} />
         <Route path="/students" element={<Students />} />
         <Route path="/statistics" element={<Statistics />} />
+        <Route path="/addteacher" element={<AddTeacher />} />
+        <Route path="/forgotpassword" element={<ForgotPassword />} />
       </Routes>
     </div>
   );

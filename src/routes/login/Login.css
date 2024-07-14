@@ -46,21 +46,28 @@
   margin-top: 50px;
   display: flex;
   align-items: center;
-  gap: 50px;
+  gap: 30px;
 }
 
 .login-form__container > input {
   min-width: 379px;
   padding: 20px;
   border-radius: 25px;
+  border: 1px solid #ffffff10;
   background: rgba(255, 255, 255, 0.1);
   font-size: 25px;
   color: var(--text-color);
   font-family: "SF Pro regular";
+  transition: all 0.3s ease;
+}
+
+.login-form__container > input:focus {
+  border: 1px solid #CFAD4F;
 }
 
 .login-form__container > p {
-  font-size: 18px;
+  font-size: 20px;
+  letter-spacing: 1px;
   font-family: "SF Pro regular";
   color: var(--primary-color);
 }
@@ -69,4 +76,9 @@
   color: var(--primary-color);
   text-decoration: underline;
   padding-bottom: 2px;
+  transition: all 0.3s ease;
+}
+.login-form__container > p > a:hover {
+  color: #fff;
+  opacity: 0.8;
 }
