@@ -1,0 +1,234 @@
+.statistics {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 140px;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.statistics-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+}
+
+.statistics-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.statistics-info .lider {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-right: 47px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: linear-gradient( 105deg, transparent 0%, transparent 15%, #A89F9F40 15%, #A89F9F40 100%);
+  border-radius: 0 21px 21px 0;
+}
+
+.statistics-info .lider img {
+  width: 67px;
+}
+
+.statistics-info .lider p {
+  font-size: var(--bigger-fs);
+  font-family: "SF Pro heavy italic";
+}
+
+.statistics-info .section-subtitle {
+  font-size: 31px;
+  font-family: "SF Pro regular";
+}
+
+
+
+
+
+.statistics-data {
+  padding: 35px 50px;
+  width: 100%;
+  border-radius: 36px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  align-self: flex-end;
+}
+
+.statistics-data .data-header {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+
+.statistics-data .data-header__content {
+  flex-grow: 1;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #A89F9F10;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.statistics-data .data-header__content:first-child {
+  background: linear-gradient( 105deg, transparent 0%, transparent 10%, #A89F9F10 10%, #A89F9F10 100%); 
+}
+
+.statistics-data .data-header__content:not(:first-child) {
+  padding: 0 14px;
+}
+
+.statistics-data .data-header__content img{
+  width: 29px;
+}
+
+
+.statistics-data .data-header__content select {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 18px;
+  font-family: "SF Pro bold";
+}
+
+.statistics-data .data-header__content p {
+  color: #fff;
+  font-size: 18px;
+  font-family: "SF Pro bold";
+}
+
+
+
+.statistics-data .data-container {
+  margin-top: 45px;
+  width: 100%;
+}
+
+.statistics-data .data-container table {
+  width: 100%;
+  display: grid;
+}
+
+.statistics-data .data-container table thead,
+.statistics-data .data-container table tbody {
+  width: 100%;
+}
+
+.statistics-data .data-container table thead tr,
+.statistics-data .data-container table tbody tr {
+  padding: 10px 50px;
+  width: 100%;
+  border-radius: 14px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 2fr 6fr 3fr;
+  gap: 10px;
+}
+
+.statistics-data .data-container table tbody tr:nth-child(odd) {
+  background: #A89F9F10;
+}
+
+.statistics-data .data-container table thead tr td,
+.statistics-data .data-container table tbody tr td {
+  width: 100%;
+  font-size: 14px;
+  font-family: "SF Pro semibold";
+  letter-spacing: 1px;
+}
+
+.statistics-data .data-container table tbody tr td.lider {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.statistics-data .data-container table tbody tr td.lider img {
+  width: 19px;
+  position: absolute;
+  left: 0;
+}
+
+.statistics-data .data-container table tbody tr td.lider span {
+  background: linear-gradient( 105deg, transparent 0%, transparent 10%, #A89F9F10 10%, #A89F9F10 100%);
+  border-radius: 0 12px 12px 0;
+  padding: 6px 25px;
+  width: 60%;
+}
+
+.statistics-data .data-footer {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.statistics-data .data-footer__time {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.statistics-data .data-footer__time > p {
+  font-size: 14px;
+  color: #fff;
+  font-family: "SF Pro regular";
+  letter-spacing: 2px;
+}
+
+.statistics-data .data-footer__time button {
+  border: none;
+  background: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #A89F9F10;
+}
+
+.statistics-data .data-footer__time button .icon {
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.statistics-data .data-footer__time button .icon:hover {
+  transform: rotate(180deg);
+}
+
+.statistics-data .data-footer__links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.statistics-data .data-footer__links button {
+  padding: 5px 13px;
+  border: none;
+  background: #A89F9F10;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.statistics-data .data-footer__links button > .icon {
+  color: #fff;
+  font-size: 18px;
+}
+
+.statistics-data .data-footer__links button > span {
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 2px;
+}

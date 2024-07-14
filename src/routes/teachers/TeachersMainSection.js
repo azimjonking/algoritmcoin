@@ -8,7 +8,7 @@ const TeachersMainSection = () => {
       {/* info start */}
       <div className="teacher-main__info">
         <h1 className="section-title">
-          O'qtuvchilar <br />
+          O'qituvchilar <br />
           Ro'yhati
         </h1>
         <p className="section-subtitle">Список учителей</p>

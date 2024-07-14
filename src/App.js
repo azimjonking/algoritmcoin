@@ -7,6 +7,7 @@ import Login from "./routes/login/Login";
 import Admin from "./routes/admin/Admin";
 import Teachers from "./routes/teachers/Teachers";
 import Students from "./routes/students/Students";
+import Statistics from './routes/statistics/Statistics';
 
 function App() {
   // const [isLogin, setIsLogin] = useState(false);
@@ -19,6 +20,7 @@ function App() {
         <Route path="/admin" element={<Admin />} />
         <Route path="/teachers" element={<Teachers />} />
         <Route path="/students" element={<Students />} />
+        <Route path="/statistics" element={<Statistics />} />
       </Routes>
     </div>
   );

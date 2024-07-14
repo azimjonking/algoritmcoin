@@ -24,6 +24,17 @@
   src: url("./fonts/SF-Pro-Display-Heavy.otf");
 }
 
+@font-face {
+  font-family: "SF Pro heavy italic";
+  src: url("./fonts/SF-Pro-Display-HeavyItalic.otf");
+}
+
+@font-face {
+  font-family: "SF Pro bold";
+  src: url("./fonts/SF-Pro-Display-Bold.otf");
+}
+
+
 * {
   margin: 0;
   padding: 0;
