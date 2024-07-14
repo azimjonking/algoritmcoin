@@ -144,5 +144,140 @@
       "subject": "Eng, IT master",
       "studentsCount": 1000
     }
+  ],
+
+  "students": [
+    {
+      "id": 1,
+      "firstName": "Abror",
+      "lastName": "Karimov",
+      "phone": "+998 90-597-79-55",
+      "subjects": [
+        {
+          "subject": "IT",
+          "teacher": "Kamron",
+          "coin": 100,
+          "day": "juft",
+          "time": "2-4"
+        },
+        {
+          "subject": "English",
+          "teacher": "Sarvar",
+          "coin": 150,
+          "day": "toq",
+          "time": "2-4"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "firstName": "Sarvar",
+      "lastName": "Sobirov",
+      "phone": "+998 90-123-44-55",
+      "subjects": [
+        {
+          "subject": "English",
+          "teacher": "Sardor",
+          "coin": 110,
+          "day": "toq",
+          "time": "8-10"
+        },
+        {
+          "subject": "Matematika",
+          "teacher": "Anvar",
+          "coin": 90,
+          "day": "juft",
+          "time": "2-4"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "firstName": "Sarvar",
+      "lastName": "Sobirov",
+      "phone": "+998 90-123-44-55",
+      "subjects": [
+        {
+          "subject": "English",
+          "teacher": "Sardor",
+          "coin": 110,
+          "day": "toq",
+          "time": "8-10"
+        },
+        {
+          "subject": "Matematika",
+          "teacher": "Anvar",
+          "coin": 90,
+          "day": "juft",
+          "time": "2-4"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "firstName": "Sarvar",
+      "lastName": "Sobirov",
+      "phone": "+998 90-123-44-55",
+      "subjects": [
+        {
+          "subject": "English",
+          "teacher": "Sardor",
+          "coin": 110,
+          "day": "toq",
+          "time": "8-10"
+        },
+        {
+          "subject": "Matematika",
+          "teacher": "Anvar",
+          "coin": 90,
+          "day": "juft",
+          "time": "2-4"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "firstName": "Abror",
+      "lastName": "Karimov",
+      "phone": "+998 90-597-79-55",
+      "subjects": [
+        {
+          "subject": "IT",
+          "teacher": "Kamron",
+          "coin": 100,
+          "day": "juft",
+          "time": "2-4"
+        },
+        {
+          "subject": "English",
+          "teacher": "Sarvar",
+          "coin": 150,
+          "day": "toq",
+          "time": "2-4"
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "firstName": "Abror",
+      "lastName": "Karimov",
+      "phone": "+998 90-597-79-55",
+      "subjects": [
+        {
+          "subject": "IT",
+          "teacher": "Kamron",
+          "coin": 100,
+          "day": "juft",
+          "time": "2-4"
+        },
+        {
+          "subject": "English",
+          "teacher": "Sarvar",
+          "coin": 150,
+          "day": "toq",
+          "time": "2-4"
+        }
+      ]
+    }
   ]
 }

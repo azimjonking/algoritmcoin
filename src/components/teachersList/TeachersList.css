@@ -7,9 +7,9 @@
   width: 100%;
   height: 100%;
   display: grid;
-  gap: 13px;
   overflow-y: scroll;
   padding-right: 9px;
+  position: relative;
 }
 
 .teachers-table::-webkit-scrollbar {
@@ -30,6 +30,13 @@
 .teachers-table > thead,
 .teachers-table > tbody {
   width: 100%;
+}
+
+.teachers-table > thead {
+  position: sticky;
+  top: 0;
+  background: #000;
+  padding-bottom: 13px;
 }
 
 .teachers-table > tbody {
@@ -58,8 +65,13 @@
   width: 100%;
 }
 
-.teachers-table .table-header > table > tr,
-.teachers-table .tbody-data > table > tr {
+.teachers-table .table-header > table > thead,
+.teachers-table .tbody-data > table > tbody {
+  width: 100%;
+}
+
+.teachers-table .table-header > table > thead > tr,
+.teachers-table .tbody-data > table > tbody > tr {
   width: 100%;
   display: grid;
   grid-template-columns: 3fr 2fr 1fr 1fr;
@@ -98,7 +110,11 @@
   width: 100%;
 }
 
-.teachers-table > tbody > tr > .action > table > tr {
+.teachers-table > tbody > tr > .action > table > tbody {
+  width: 100%;
+}
+
+.teachers-table > tbody > tr > .action > table > tbody > tr {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;

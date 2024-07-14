@@ -22,17 +22,19 @@ const TeachersList = () => {
       <table className="teachers-table">
         <thead>
           <tr>
-            <td className='table-header'>
+            <td className="table-header">
               <table>
-                <tr>
-                  <td>Ism / Familiya</td>
-                  <td>Telefon raqam</td>
-                  <td>Fan</td>
-                  <td>O'quvchilar soni</td>
-                </tr>
+                <thead>
+                  <tr>
+                    <td>Ism / Familiya</td>
+                    <td>Telefon raqam</td>
+                    <td>Fan</td>
+                    <td>O'quvchilar soni</td>
+                  </tr>
+                </thead>
               </table>
             </td>
-            <td className='role'>Admin</td>
+            <td className="role">Admin</td>
           </tr>
         </thead>
 
@@ -41,28 +43,39 @@ const TeachersList = () => {
             teachers.map((teacher, i) => {
               return (
                 <tr key={i}>
-                  <td className='tbody-data'>
+                  <td className="tbody-data">
                     <table>
-                      <tr>
-                        <td>{teacher.firstName} {teacher.lastName}</td>
-                        <td>{teacher.phone}</td>
-                        <td>{teacher.subject}</td>
-                        <td>
-                          <Link to='/studentsList' className='studentsCount-link'>{teacher.studentsCount} ta</Link>
-                        </td>
-                      </tr>
+                      <tbody>
+                        <tr>
+                          <td>
+                            {teacher.firstName} {teacher.lastName}
+                          </td>
+                          <td>{teacher.phone}</td>
+                          <td>{teacher.subject}</td>
+                          <td>
+                            <Link
+                              to="/studentsList"
+                              className="studentsCount-link"
+                            >
+                              {teacher.studentsCount} ta
+                            </Link>
+                          </td>
+                        </tr>
+                      </tbody>
                     </table>
                   </td>
-                  <td className='action'>
+                  <td className="action">
                     <table>
-                      <tr>
-                        <td>
-                          <Link>O'zgartirish</Link>
-                        </td>
-                        <td>
-                          <button>O'chirish</button>
-                        </td>
-                      </tr>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <Link>O'zgartirish</Link>
+                          </td>
+                          <td>
+                            <button>O'chirish</button>
+                          </td>
+                        </tr>
+                      </tbody>
                     </table>
                   </td>
                 </tr>

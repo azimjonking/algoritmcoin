@@ -1,0 +1,89 @@
+.studentsList {
+  padding: 200px 0 75px;
+  height: 100dvh;
+}
+
+.students-table {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+  display: grid;
+  align-content: flex-start;
+  overflow-y: scroll;
+  padding-right: 9px;
+  position: relative;
+}
+
+.students-table::-webkit-scrollbar {
+  display: block;
+  width: 23px;
+}
+
+.students-table::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: rgba(135, 135, 135, 0.5);
+}
+
+.students-table::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+}
+
+.students-table > thead,
+.students-table > tbody {
+  width: 100%;
+}
+
+.students-table > thead {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background: #000;
+  padding-bottom: 13px;
+}
+
+.students-table > thead > tr,
+.students-table > tbody > tr {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 3fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 8px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 30px;
+}
+
+.students-table > thead > tr > td,
+.students-table > tbody > tr > td {
+  width: 100%;
+  text-align: left;
+  font-size: 19px;
+  color: #fff;
+  font-family: "SF Pro regular";
+}
+
+.students-table > thead > tr > td > select {
+  background: none;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+.students-table > tbody > tr > td > select {
+  width: 100%;
+  background: #D9D9D920;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+.students-table > thead > tr > td > select > option,
+.students-table > tbody > tr > td > select > option {
+  color: #333;
+  background-color: transparent;
+  padding: 10px;
+}
+
+.students-table > tbody {
+  display: grid;
+  gap: 13px;
+}
