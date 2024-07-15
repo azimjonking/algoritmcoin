@@ -52,11 +52,11 @@ html {
   --secondary-color: #cd0000;
   /* --bg-color: ; */
 
-  --biggest-fs: 96px;
-  --bigger-fs: 60px;
-  --big-fs: 50px;
-  --normal-fs: 27px;
-  --small-fs: 19px;
+  --biggest-fs: 5vw; /* 96px */
+  --bigger-fs: 3.125vw;  /* 60px */
+  --big-fs: 2.6vw;
+  --normal-fs: 1.4vw;
+  --small-fs: 0.99vw;
 }
 
 ::-webkit-scrollbar {

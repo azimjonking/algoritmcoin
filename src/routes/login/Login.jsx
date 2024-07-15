@@ -1,16 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import "./Login.css";
 
 const Login = () => {
   return (
     <section className="login container">
-      <div className="coin-bg">
-        {/* <img src="./assets/coin.png" alt="coin" /> */}
+      {/* <div className="coin-bg">
         <LazyLoadImage src="./assets/coin.png" alt="coin" effect="blur" />
-      </div>
+      </div> */}
       <div className="login-header">
         <h1 className="section-title">
           ALGORITM <span>COIN</span>GA <br />
@@ -26,6 +25,9 @@ const Login = () => {
           </p>
         </div>
         <div className="login-form__container">
+          <div className="coin-bg">
+            <LazyLoadImage src="./assets/coin.png" alt="coin" effect="blur" />
+          </div>
           <input type="text" placeholder="username" />
           <input type="password" placeholder="password" />
           <button type="button" className="btn btn-primary">
