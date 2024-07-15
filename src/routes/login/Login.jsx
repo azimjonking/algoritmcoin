@@ -9,7 +9,9 @@ const Login = () => {
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
 	const [data, setData] = useState('')
-	console.log(data)
+	const [loading, setLoading] = useState(false)
+	console.log(data.data.detail)
+	console.log(loading)
 
 	const params = {
 		email,
@@ -20,9 +22,17 @@ const Login = () => {
 		e.preventDefault()
 		axios
 			.post(`${MAIN_URL}auth/login`, null, { params })
-			.then(res => setData(res))
+			.then(res => {
+				setData(res)
+				console.log(res)
+				setLoading(true)
+			})
 			.catch(err => {
 				console.error('There was an error!', err)
+			})
+			.finally(() => {
+				console.log('Request completed')
+				setLoading(false)
 			})
 	}
 	return (
@@ -60,7 +70,11 @@ const Login = () => {
 						value={password}
 						onChange={e => setPassword(e.target.value)}
 					/>
-					<button className='btn btn-primary' onClick={e => handleSubmit(e)}>
+					<button
+						className='btn btn-primary'
+						onClick={e => handleSubmit(e)}
+						disabled={loading}
+					>
 						Kirish
 					</button>
 					<p>
