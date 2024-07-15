@@ -9,6 +9,7 @@ const Login = () => {
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
 	const [data, setData] = useState('')
+	console.log(data)
 
 	const params = {
 		email,
