@@ -81,3 +81,14 @@ input {
   border: none;
   outline: none;
 }
+
+
+@media screen and (max-width: 768px) {
+  :root {
+    --biggest-fs: 6.51vw; /* 96px */
+    --bigger-fs: 5.47vw;  /* 60px */
+    --big-fs: 3.91vw;
+    --normal-fs: 2.61vw;
+    --small-fs: 1.4vw;
+  }
+}
