@@ -10,29 +10,10 @@
   justify-content: flex-end;
 }
 
-.login .coin-bg {
-  width: 55vw;
-  position: absolute;
-  top: 0;
-  right: 0;
-  mix-blend-mode: screen;
-  z-index: 2;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.login .coin-bg span {
-  width: 100%;
-}
-
-.login .coin-bg span img {
-  width: 100%;
-}
-
 .login .login-header {
   width: 100%;
+  position: relative;
+  z-index: 3;
 }
 
 .login .login-header .section-subtitle {
@@ -46,7 +27,27 @@
   border-radius: 2.18vw;
   background: rgba(255, 255, 255, 0.1);
   position: relative;
-  z-index: 3;
+}
+
+.login-form .coin-bg {
+  width: 57vw;
+  position: absolute;
+  bottom: 20%;
+  right: 0;
+  mix-blend-mode: screen;
+  z-index: 1;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form .coin-bg span {
+  width: 100%;
+}
+
+.login-form .coin-bg span img {
+  width: 100%;
 }
 
 .login-form__title {
@@ -68,28 +69,8 @@
   display: flex;
   align-items: center;
   gap: 1.56vw;
-}
-
-.login-form  .coin-bg {
-  width: 55vw;
-  position: absolute;
-  top: 0;
-  right: 0;
-  mix-blend-mode: screen;
+  position: relative;
   z-index: 2;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: red;
-}
-
-.login-form .coin-bg span {
-  width: 100%;
-}
-
-.login-form  .coin-bg span img {
-  width: 100%;
 }
 
 .login-form__container > input {
@@ -130,21 +111,63 @@
 @media screen and (max-width: 768px) {
   .login {
     justify-content: center;
+    padding-top: 10.42vw;
+    padding-bottom: 10.42vw;
   }
-  .login .coin-bg {
-    width: 70vw;
-    top: 10vw;
-    right: -10vw;
+
+  .login-form {
+    margin-top: 9.77vw;
+    padding: 6.51vw 7.81vw;
+    border-radius: 5.47vw;
   }
+
+  .login-form .coin-bg {
+    width: 57vw;
+    bottom: 50%;
+    right: 0;
+  }
+
   .login-form__container {
     margin-top: 2.6vw;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 2vw;
+    gap: 1.56vw;
   }
 
   .login-form__container > input,
   .login-form__container > button {
     width: 40vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .login {
+    justify-content: center;
+    gap: 20vw;
+  }
+
+  .login-header .section-title {
+    text-align: center;
+  }
+
+  .login-header .section-subtitle {
+    margin-top: 5vw;
+    text-align: center;
+  }
+
+  .login-form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .login-form .coin-bg {
+    width: 57vw;
+    bottom: 60%;
+    right: 0;
+  }
+
+  .login-form__container > input,
+  .login-form__container > button {
+    width: 100%;
   }
 }

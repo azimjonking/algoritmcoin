@@ -1,33 +1,35 @@
-1px = 0.052vw
+// 1920px  // 768 px
 
-2px = 0.104vw
+1px = 0.052vw = 0.13vw
 
-10px = 5.2vw
+2px = 0.104vw = 0.26vw
 
-19px = 0.99vw
+10px = 0.52vw = 1.3vw
 
-20px = 1.04vw
+19px = 0.99vw = 2.47vw
 
-25px = 1.3vw
+20px = 1.04vw = 2.61vw
 
-27px = 1.4vw
+25px = 1.3vw = 3.25vw
 
-30px = 1.56vw
+27px = 1.4vw = 3.51vw
 
-42px = 2.18vw
+30px = 1.56vw = 3.91vw
 
-50px = 2.6 vw
+42px = 2.18vw = 5.47vw
 
-60px = 3.125 vw
+50px = 2.6 vw = 6.51vw
 
-65 px = 3.38 vw
+60px = 3.125 vw = 7.81 vw
 
-75px = 3.9vw
+65 px = 3.38 vw = 8.46 vw
 
-80px = 4.17vw
+75px = 3.9vw = 9.77 vw
 
-96 px = 5 vw
+80px = 4.17vw = 10.42 vw
 
-200px = 10.42 vw
+96 px = 5 vw = 12.5 vw
 
-379px = 19.74 vw
+200px = 10.42 vw = 26.04 vw
+
+379px = 19.74 vw = 49.34 vw

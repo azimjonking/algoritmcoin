@@ -18,6 +18,9 @@ const Login = () => {
         <p className="section-subtitle">ДОБРО ПОЖАЛОВАТЬ! В АЛГОРИТМ COIN.</p>
       </div>
       <form action="#" className="login-form">
+        <div className="coin-bg">
+          <LazyLoadImage src="./assets/coin.png" alt="coin" effect="blur" />
+        </div>
         <div className="login-form__header">
           <h3 className="login-form__title">Veb-saytga kirish</h3>
           <p className="login-form__subtitle">
@@ -25,9 +28,6 @@ const Login = () => {
           </p>
         </div>
         <div className="login-form__container">
-          <div className="coin-bg">
-            <LazyLoadImage src="./assets/coin.png" alt="coin" effect="blur" />
-          </div>
           <input type="text" placeholder="username" />
           <input type="password" placeholder="password" />
           <button type="button" className="btn btn-primary">
