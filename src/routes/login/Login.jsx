@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom'
 import { Flip, toast } from 'react-toastify'
 import { LoadingBtn } from '../../components/loading_btn/LoadingBtn'
 import { MAIN_URL } from '../../url/MainUrl'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+
 import './Login.css'
 const Login = () => {
 
@@ -65,6 +67,9 @@ const Login = () => {
 				<p className='section-subtitle'>ДОБРО ПОЖАЛОВАТЬ! В АЛГОРИТМ COIN.</p>
 			</div>
 			<form className='login-form'>
+				<div className='coin-bg'>
+          <LazyLoadImage src='./assets/coin.png' alt='coin' effect='blur' />
+        </div>
 				<div className='login-form__header'>
 					<h3 className='login-form__title'>Veb-saytga kirish</h3>
 					<p className='login-form__subtitle'>
