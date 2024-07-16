@@ -14,6 +14,7 @@
   width: 100%;
   position: relative;
   z-index: 3;
+}
 
 .login .login-header .section-subtitle {
 	text-transform: lowercase;
