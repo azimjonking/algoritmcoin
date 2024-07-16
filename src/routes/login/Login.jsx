@@ -2,16 +2,17 @@ import axios from 'axios'
 import React, { useState } from 'react'
 import 'react-lazy-load-image-component/src/effects/blur.css'
 import { Link } from 'react-router-dom'
+import { Flip, toast } from 'react-toastify'
+import { LoadingBtn } from '../../components/loading_btn/LoadingBtn'
 import { MAIN_URL } from '../../url/MainUrl'
 import './Login.css'
-
 const Login = () => {
 	const [email, setEmail] = useState('')
 	const [password, setPassword] = useState('')
-	const [data, setData] = useState('')
-	const [loading, setLoading] = useState(false)
-	console.log(data.data.detail)
-	console.log(loading)
+	// const [data, setData] = useState('')
+	const [disable, setDisable] = useState(false)
+	const [error, setError] = useState(false)
+	// console.log(data)
 
 	const params = {
 		email,
@@ -20,26 +21,41 @@ const Login = () => {
 
 	const handleSubmit = e => {
 		e.preventDefault()
+		setDisable(true)
 		axios
 			.post(`${MAIN_URL}auth/login`, null, { params })
 			.then(res => {
-				setData(res)
-				console.log(res)
-				setLoading(true)
+				// setData(res)
+				setError(false)
+				toast.success(res?.data?.detail, {
+					position: 'top-right',
+					autoClose: 5000,
+					hideProgressBar: true,
+					progress: undefined,
+					theme: 'dark',
+					transition: Flip,
+				})
+				setEmail('')
+				setPassword('')
 			})
 			.catch(err => {
+				setError(true)
 				console.error('There was an error!', err)
+				toast.error('Nimadir Xato ketdi', {
+					position: 'top-right',
+					autoClose: 5000,
+					hideProgressBar: true,
+					progress: undefined,
+					theme: 'dark',
+					transition: Flip,
+				})
 			})
 			.finally(() => {
-				console.log('Request completed')
-				setLoading(false)
+				setDisable(false)
 			})
 	}
 	return (
 		<section className='login container'>
-			{/* <div className="coin-bg">
-        <LazyLoadImage src="./assets/coin.png" alt="coin" effect="blur" />
-      </div> */}
 			<div className='login-header'>
 				<h1 className='section-title'>
 					ALGORITM <span>COIN</span>GA <br />
@@ -54,27 +70,29 @@ const Login = () => {
 						Password yoki username xato emasligiga ishonch hosil qiling!
 					</p>
 				</div>
-				<div className='login-form__container'>
-					<div className='coin-bg'>
-						{/* <LazyLoadImage src='./assets/coin.png' alt='coin' effect='blur' /> */}
-					</div>
+				<div className={`login-form__container ${error ? 'error_input' : ''}`}>
 					<input
 						type='text'
 						placeholder='username'
 						value={email}
+						onFocus={() => setError(false)}
 						onChange={e => setEmail(e.target.value)}
 					/>
 					<input
 						type='password'
 						placeholder='password'
 						value={password}
+						onFocus={() => setError(false)}
 						onChange={e => setPassword(e.target.value)}
 					/>
 					<button
-						className='btn btn-primary'
+						className={`ld-ring + ld-spin  btn ${
+							disable ? 'disable_btn' : ' btn-primary'
+						}`}
+						disabled={disable}
 						onClick={e => handleSubmit(e)}
-						disabled={loading}
 					>
+						{disable && <LoadingBtn />}
 						Kirish
 					</button>
 					<p>

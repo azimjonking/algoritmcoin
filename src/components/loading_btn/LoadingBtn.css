@@ -1,0 +1,92 @@
+.lds-roller {
+	color: #1c4c5b; /* Цвет можно изменить здесь */
+}
+.lds-roller,
+.lds-roller div,
+.lds-roller div:after {
+	box-sizing: border-box;
+}
+.lds-roller {
+	display: inline-block;
+	position: relative;
+	width: 15px;
+	height: 15px;
+}
+.lds-roller div {
+	animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+	transform-origin: 7.5px 7.5px; /* Центрирование по увеличенным размерам */
+}
+.lds-roller div:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	width: 1.35px; /* Пропорциональное увеличение размеров */
+	height: 1.35px;
+	border-radius: 50%;
+	background: currentColor;
+	margin: -0.675px 0 0 -0.675px; /* Пропорциональное увеличение размеров */
+}
+.lds-roller div:nth-child(1) {
+	animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+	top: 11.7426px;
+	left: 11.7426px;
+}
+.lds-roller div:nth-child(2) {
+	animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+	top: 12.69615px;
+	left: 10.5px;
+}
+.lds-roller div:nth-child(3) {
+	animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+	top: 13.29555px;
+	left: 9.05291px;
+}
+.lds-roller div:nth-child(4) {
+	animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+	top: 13.5px;
+	left: 7.5px;
+}
+.lds-roller div:nth-child(5) {
+	animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+	top: 13.29555px;
+	left: 5.94709px;
+}
+.lds-roller div:nth-child(6) {
+	animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+	top: 12.69615px;
+	left: 4.5px;
+}
+.lds-roller div:nth-child(7) {
+	animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+	top: 11.7426px;
+	left: 3.257365px;
+}
+.lds-roller div:nth-child(8) {
+	animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+	top: 10.5px;
+	left: 2.30385px;
+}
+@keyframes lds-roller {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
