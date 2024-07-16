@@ -73,8 +73,8 @@ const Login = () => {
 				</div>
 				<div className={`login-form__container ${error ? 'error_input' : ''}`}>
 					<input
-						type='text'
-						placeholder='username'
+						type='email'
+						placeholder='Email'
 						value={email}
 						onFocus={() => setError(false)}
 						onChange={e => setEmail(e.target.value)}

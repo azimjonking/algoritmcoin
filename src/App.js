@@ -7,6 +7,7 @@ import './App.css'
 import Header from './components/header/Header'
 import AddTeacher from './routes/addTeacher/AddTeacher'
 import Admin from './routes/admin/Admin'
+import Auth from './routes/auth/Auth'
 import ForgotPassword from './routes/forgotPassword/ForgotPassword'
 import Login from './routes/login/Login'
 import Statistics from './routes/statistics/Statistics'
@@ -21,7 +22,9 @@ function App() {
 			<Header isLogin={isLogin} />
 			<Routes>
 				<Route path='/' element={<Login />} />
-				<Route path='/admin' element={<Admin />} />
+				<Route path='/' element={<Auth />}>
+					<Route path='/admin' element={<Admin />} />
+				</Route>
 				<Route path='/teachers' element={<Teachers />} />
 				<Route path='/students' element={<Students />} />
 				<Route path='/statistics' element={<Statistics />} />
