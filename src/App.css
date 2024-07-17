@@ -33,10 +33,10 @@
 	font-size: var(--normal-fs);
 	font-family: 'SF Pro semibold';
 	transition: all 0.3s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
 }
 
 .btn-primary {
@@ -65,4 +65,14 @@
 	color: #eee !important;
 	border-color: gray !important;
 	cursor: not-allowed !important;
+}
+@media (max-width: 777px) {
+	.btn {
+		padding: 0;
+	}
+}
+@media (max-width: 769px) {
+	.btn_top {
+		margin-top: 8px;
+	}
 }
