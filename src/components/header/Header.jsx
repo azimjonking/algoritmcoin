@@ -1,10 +1,11 @@
-import "./Header.css";
-import { Link } from "react-router-dom";
-import SocialNetwork from "../socialNetwork/SocialNetwork";
-import Navbar from "../navbar/Navbar";
+import { Link } from "react-router-dom"
+import Navbar from "../navbar/Navbar"
+import SocialNetwork from "../socialNetwork/SocialNetwork"
+import "./Header.css"
 
 const Header = ({ isLogin }) => {
   return (
+    <>
     <header>
       <Link to="/" className="logo">
         <img src="./assets/logo.png" alt="Algoritm" />
@@ -33,6 +34,8 @@ const Header = ({ isLogin }) => {
         </>
       )}
     </header>
+    <div className="space_header"></div>
+    </>
   );
 };
 

@@ -1,51 +1,123 @@
 nav ul {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
 }
 
 nav ul li a {
-  padding: 10px 20px 10px 12px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.1);
-  color: var(--primary-color);
+	padding: 10px 20px 10px 12px;
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	border-radius: 12px;
+	background: rgba(255, 255, 255, 0.1);
+	color: var(--primary-color);
 }
 
 nav ul li a.username {
-  padding: 10px 20px;
+	padding: 10px 20px;
 }
-
+nav .nav_btn img {
+	width: 15px;
+}
 nav ul li a span {
-  font-family: "SF Pro regular";
-  font-size: var(--small-fs);
-  transition: all 0.2s ease;
-  letter-spacing: 1px;
+	font-family: 'SF Pro regular';
+	font-size: var(--small-fs);
+	transition: all 0.2s ease;
+	letter-spacing: 1px;
 }
 nav ul li a:hover {
-  color: #fff;
-  opacity: 1;
+	color: #fff;
+	opacity: 1;
 }
 nav ul li a:hover path {
-  stroke: #fff;
-  opacity: 1;
-  transition: all 0.2s ease;
+	stroke: #fff;
+	opacity: 1;
+	transition: all 0.2s ease;
 }
 
 nav ul li a.userImg {
-  padding: 0;
+	padding: 0;
 }
 
 nav ul li a.userImg img {
-  width: 42px;
-  height: 42px;
-  border-radius: 30%;
-  object-fit: cover;
-  object-position: top;
+	width: 32px;
+	height: 30px;
+	border-radius: 30%;
+	object-fit: cover;
+	object-position: top;
+}
+nav ul li a.userImg span {
+	padding: 10px 15px;
+}
+@media (max-width: 950px) {
+	ul .username {
+		display: none;
+	}
+	nav ul li a {
+		border-radius: 8px;
+	}
 }
 
-nav ul li a.userImg span {
-  padding: 10px 15px;
+@media (max-width: 740px) {
+	ul li span {
+		display: none;
+	}
+	ul li a {
+		padding: 15px !important;
+	}
+	nav ul li a.userImg {
+		padding: 0 !important;
+	}
+	nav ul li a.userImg img {
+		height: 38px;
+		width: 38px;
+	}
 }
+@media (max-width: 562px) {
+	nav ul li a.userImg img {
+		height: 34px;
+		width: 34px;
+	}
+	ul li a {
+		padding: 12px !important;
+	}
+}
+ul li svg:nth-child(1) {
+	width: 16px;
+	height: 16px;
+}
+@media (max-width: 410px) {
+	ul li a {
+		padding: 10px !important;
+	}
+	nav ul li a.userImg img {
+		width: 30px;
+		height: 30px;
+	}
+}
+@media (max-width: 390px) {
+	ul li a {
+		padding: 7px !important;
+		border-radius: 5px;
+		img {
+			width: 6px;
+		}
+	}
+	nav ul li a.userImg img {
+		height: 24px;
+		width: 24px;
+	}
+}
+/* @media (max-width: 350px) {
+	ul li a {
+		padding: 5px !important;
+	}
+	ul li a img {
+		width: 5px;
+	}
+	nav ul li a.userImg img {
+		height: 23px;
+		width: 23px;
+	}
+} */

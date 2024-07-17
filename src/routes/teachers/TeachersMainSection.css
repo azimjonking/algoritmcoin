@@ -65,6 +65,12 @@
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+.section-title {
+  text-transform: uppercase;
+}
+.section-subtitle {
+  text-transform: lowercase;
+}
 
 @keyframes shadow {
   0% {
