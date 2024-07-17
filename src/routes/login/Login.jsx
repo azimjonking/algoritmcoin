@@ -149,10 +149,8 @@ const Login = () => {
 					<p>
 						Tugmani bosib, <Link to='/'>maxfiylik siyosati</Link> va{' '}
 						<Link to='/'>
-							foydalanuvchi <br />
-							shartnomasining
-						</Link>
-						shartlarini qabul qilgan bo'lasiz
+							foydalanuvchi shartnomasining
+						</Link>	shartlarini qabul qilgan bo'lasiz
 					</p>
 				</div>
 			</form>

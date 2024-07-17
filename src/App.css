@@ -14,6 +14,7 @@
 	font-size: var(--biggest-fs);
 	color: var(--text-color);
 	font-family: 'SF Pro black';
+  text-shadow: 0.13vw 0.13vw 0.5vw #000;
 }
 
 .section-title span {
@@ -24,6 +25,7 @@
 	font-size: var(--big-fs);
 	color: var(--text-color);
 	font-family: 'SF Pro medium';
+  text-shadow: 0.13vw 0.13vw 0.5vw #000;
 }
 
 .btn {
@@ -33,10 +35,10 @@
 	font-size: var(--normal-fs);
 	font-family: 'SF Pro semibold';
 	transition: all 0.3s ease;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.52vw;
 }
 
 .btn-primary {
@@ -66,8 +68,30 @@
 	border-color: gray !important;
 	cursor: not-allowed !important;
 }
-@media (max-width: 769px) {
-	.btn_top {
+
+
+@media screen and (max-width: 768px) {
+  .btn_top {
 		margin-top: 8px;
+	}
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.btn {
+		padding: 2.61vw 8.46vw;
+		border-radius: 3.91vw;
+		gap: 1.3vw;
+	}
+	.btn-primary {
+		border: 0.13vw solid var(--main-color);
+	}
+	.btn-secondary {
+		border: 0.13vw solid var(--main-color);
+	}
+}
+@media screen and (max-width: 576px) {
+	.container {
+		width: 98%;
 	}
 }
