@@ -1,93 +1,111 @@
 .addteacher {
-  width: 100%;
-  min-height: 100dvh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-position: center;
-  background-size: contain;
-  position: relative;
+	width: 100%;
+	min-height: 100dvh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-position: center;
+	background-size: contain;
+	position: relative;
 }
 
 .addteacher::after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  backdrop-filter: blur(5px);
-  z-index: 1;
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	backdrop-filter: blur(5px);
+	z-index: 1;
 }
 
 .addteacher > form {
-  max-width: 377px;
-  width: 100%;
-  position: relative;
-  z-index: 5;
-  padding: 70px 50px 40px;
-  background: #ffffff10;
-  backdrop-filter: blur(117px);
-  border-radius: 42px;
-  display: grid;
-  gap: 15px;
+	max-width: 377px;
+	width: 100%;
+	position: relative;
+	z-index: 5;
+	padding: 70px 50px 40px;
+	background: #ffffff10;
+	backdrop-filter: blur(117px);
+	border-radius: 42px;
+	display: grid;
+	gap: 15px;
 }
 
 .addteacher > form .close-btn {
-  position: absolute;
-  top: 27px;
-  right: 27px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: #A89F9F10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	position: absolute;
+	top: 27px;
+	right: 27px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #a89f9f10;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .addteacher > form .close-btn .icon {
-  font-size: 2rem;
-  color: #fff;
+	font-size: 2rem;
+	color: #fff;
 }
 
 .addteacher > form > h3 {
-  font-size: 16px;
-  font-family: "SF Pro regular";
-  letter-spacing: 2px;
+	font-size: 16px;
+	font-family: 'SF Pro regular';
+	letter-spacing: 2px;
 }
 
 .addteacher > form > input {
-  width: 100%;
-  padding: 11px 32px;
-  font-size: 18px;
-  font-family: "SF Pro regular";
-  color: #fff;
-  background: #ffffff10;
-  border-radius: 12px;
-  border: 1px solid #ffffff10;
-  outline: none;
-  letter-spacing: 2px;
-  transition: all 0.3s ease;
+	width: 100%;
+	padding: 11px 32px;
+	font-size: 18px;
+	font-family: 'SF Pro regular';
+	color: #fff;
+	background: #ffffff10;
+	border-radius: 12px;
+	border: 1px solid #ffffff10;
+	outline: none;
+	letter-spacing: 2px;
+	transition: all 0.3s ease;
 }
 .addteacher > form > input::placeholder {
-  color: #ffffff80
+	color: #ffffff80;
 }
 
 .addteacher > form > input:focus {
-  border: 1px solid #CFAD4F;
+	border: 1px solid #cfad4f;
 }
 
 .addteacher > form > .create {
-  width: 100%;
-  padding: 12px;
-  font-size: 18px;
-  font-family: "SF Pro semibold";
-  color: #000;
-  background: linear-gradient(#F0E081, #CFAD4F);
-  border-radius: 12px;
-  outline: none;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
-  text-align: center;
+	width: 100%;
+	padding: 12px;
+	font-size: 18px;
+	font-family: 'SF Pro semibold';
+	color: #000;
+	background: linear-gradient(#f0e081, #cfad4f);
+	border-radius: 12px;
+	outline: none;
+	letter-spacing: 1px;
+	transition: all 0.3s ease;
+	text-align: center;
+}
+@media (max-width: 550px) {
+	.addteacher form {
+		width: 300px;
+		border-radius: 20px;
+		padding: 40px 25px 30px;
+		input {
+			height: 30px;
+			font-size: 10px;
+			padding-left: 10px;
+		}
+		h3 {
+			font-size: 15px;
+		}
+		.create {
+			padding: 4px;
+		}
+	}
 }

@@ -9,7 +9,7 @@ header {
 	position: fixed;
 	top: 0;
 	left: 0;
-	background: #000;
+	background: #fff;
 	z-index: 10;
 }
 
@@ -78,6 +78,10 @@ header .result {
 	}
 }
 @media (max-width: 562px) {
+	header {
+		padding: 25px 5%;
+		height: 70px;
+	}
 	.logo span {
 		font-size: 22px !important;
 	}
@@ -86,6 +90,9 @@ header .result {
 	}
 }
 @media (max-width: 410px) {
+	header {
+		height: 50px;
+	}
 	.logo span {
 		font-size: 19px !important;
 	}
