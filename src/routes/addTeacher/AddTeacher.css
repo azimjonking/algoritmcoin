@@ -16,78 +16,172 @@
   position: absolute;
   left: 0;
   top: 0;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(0.26vw);
   z-index: 1;
 }
 
 .addteacher > form {
-  max-width: 377px;
+  min-width: 40vw;
+  max-width: 50vw;
   width: 100%;
   position: relative;
   z-index: 5;
-  padding: 70px 50px 40px;
+  padding: 3.64vw 2.6vw 2.09vw;
   background: #ffffff10;
-  backdrop-filter: blur(117px);
-  border-radius: 42px;
+  backdrop-filter: blur(6.25vw);
+  border-radius: 2.09vw;
   display: grid;
-  gap: 15px;
+  gap: 1.3vw;
 }
 
 .addteacher > form .close-btn {
   position: absolute;
-  top: 27px;
-  right: 27px;
-  width: 30px;
-  height: 30px;
+  top: 1.4vw;
+  right: 1.4vw;
+  width: 2.6vw;
+  height: 2.6vw;
   border-radius: 50%;
-  background: #A89F9F10;
+  background: #a89f9f10;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .addteacher > form .close-btn .icon {
-  font-size: 2rem;
+  font-size: 2.39vw;
   color: #fff;
 }
 
 .addteacher > form > h3 {
-  font-size: 16px;
+  font-size: 1.88vw;
   font-family: "SF Pro regular";
-  letter-spacing: 2px;
+  letter-spacing: 0.104vw;
 }
 
 .addteacher > form > input {
   width: 100%;
-  padding: 11px 32px;
-  font-size: 18px;
+  padding: 1.04vw 1.56vw;
+  font-size: 1.04vw;
   font-family: "SF Pro regular";
   color: #fff;
   background: #ffffff10;
-  border-radius: 12px;
-  border: 1px solid #ffffff10;
+  border-radius: 0.625vw;
+  border: 0.052vw solid #ffffff10;
   outline: none;
-  letter-spacing: 2px;
+  letter-spacing: 0.104vw;
   transition: all 0.3s ease;
 }
 .addteacher > form > input::placeholder {
-  color: #ffffff80
+  color: #ffffff80;
 }
 
 .addteacher > form > input:focus {
-  border: 1px solid #CFAD4F;
+  border: 0.052vw solid #cfad4f;
 }
 
 .addteacher > form > .create {
   width: 100%;
-  padding: 12px;
-  font-size: 18px;
+  padding: 0.625vw;
+  font-size: 1.3vw;
   font-family: "SF Pro semibold";
   color: #000;
-  background: linear-gradient(#F0E081, #CFAD4F);
-  border-radius: 12px;
+  background: linear-gradient(#f0e081, #cfad4f);
+  border-radius: 0.625vw;
   outline: none;
-  letter-spacing: 1px;
+  letter-spacing: 0.052vw;
   transition: all 0.3s ease;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .addteacher::after {
+    backdrop-filter: blur(0.65vw);
+  }
+
+  .addteacher > form {
+    max-width: 60vw;
+    padding: 7.81vw 3.91vw 3.91vw;
+    backdrop-filter: blur(6.25vw);
+    border-radius: 2.09vw;
+    gap: 2.61vw;
+  }
+
+  .addteacher > form .close-btn {
+    top: 3.51vw;
+    right: 3.51vw;
+    width: 6.51vw;
+    height: 6.51vw;
+  }
+
+  .addteacher > form .close-btn .icon {
+    font-size: 5.47vw;
+  }
+
+  .addteacher > form > h3 {
+    font-size: 3.25vw;
+    letter-spacing: 0.26vw;
+  }
+
+  .addteacher > form > input {
+    padding: 1.3vw 2.61vw;
+    font-size: 2.61vw;
+    border-radius: 0.625vw;
+    border: 0.13vw solid #ffffff10;
+    letter-spacing: 0.26vw;
+  }
+
+  .addteacher > form > input:focus {
+    border: 0.13vw solid #cfad4f;
+  }
+
+  .addteacher > form > .create {
+    padding: 2.34vw;
+    font-size: 2.34vw;
+    border-radius: 1.56vw;
+    letter-spacing: 0.13vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .addteacher > form {
+    max-width: 90vw;
+    padding: 8.68vw 5.21vw 5.21vw;
+    border-radius: 3.47vw;
+    gap: 3.47vw;
+  }
+
+  .addteacher > form .close-btn {
+    top: 4.68vw;
+    right: 4.68vw;
+    width: 8.69vw;
+    height: 8.69vw;
+  }
+
+  .addteacher > form .close-btn .icon {
+    font-size: 7.3vw;
+  }
+
+  .addteacher > form > h3 {
+    font-size: 4.34vw;
+    letter-spacing: 0.34vw;
+  }
+
+  .addteacher > form > input {
+    padding: 1.73vw 3.47vw;
+    font-size: 3.47vw;
+    border-radius: 2.08vw;
+    border: 0.174vw solid #ffffff10;
+    letter-spacing: 0.347vw;
+  }
+
+  .addteacher > form > input:focus {
+    border: 0.174vw solid #cfad4f;
+  }
+
+  .addteacher > form > .create {
+    padding: 3.125vw;
+    font-size: 3.125vw;
+    border-radius: 2.08vw;
+    letter-spacing: 0.174vw;
+  }
 }
