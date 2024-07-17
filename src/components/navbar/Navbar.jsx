@@ -4,12 +4,6 @@ import { Link } from 'react-router-dom'
 import './Navbar.css'
 
 const Navbar = () => {
-	// const [data, setData] = useState(false)
-	// const [blockBar, setBlockBar] = useState(false)
-	// useEffect(() => {
-	// 	fetchUserWithData(setData)
-	// }, [])
-	// console.log(data)
 	let data
 	return (
 		<>
@@ -17,13 +11,13 @@ const Navbar = () => {
 				<ul>
 					<li>
 						<Link to='/addteacher' className='nav_btn'>
-							<img src='/assets/svg_icons/add.png' alt='add icon' />
+							<img src='/assets/svg_icons/add.png' alt='add teacher' />
 							<span>O'qituvchi qo'shish</span>
 						</Link>
 					</li>
 					<li>
 						<Link to='/search' className='nav_btn'>
-							<img src='/assets/svg_icons/search.png' alt='search icon' />
+							<img src='/assets/svg_icons/search.png' alt='search' />
 							<span>Qidirish</span>
 						</Link>
 					</li>
@@ -35,9 +29,9 @@ const Navbar = () => {
 					<li>
 						<Link to='/profile' className='userImg'>
 							{data?.data?.image ? (
-								<img src={data.data.image} alt="teacher's image" />
+								<img src={data.data.image} alt='user' />
 							) : (
-								<img src='./assets/user.jfif' alt='U' />
+								<img src='./assets/user.jfif' alt='user' />
 							)}
 						</Link>
 					</li>
@@ -45,16 +39,14 @@ const Navbar = () => {
 						<li>
 							<Link to='/logout' className='nav_btn'>
 								<span>Chiqish</span>
-								<img src='/assets/svg_icons/logout.png' alt='logout icon' />
+								<img src='/assets/svg_icons/logout.png' alt='logout' />
 							</Link>
 						</li>
 					) : (
 						<li>
 							<Link to='/login'>
-								<a className='btn btn_login'>
-									<FaRegUser />
-									<span>Kirish</span>
-								</a>
+								<FaRegUser />
+								<span>Kirish</span>
 							</Link>
 						</li>
 					)}
