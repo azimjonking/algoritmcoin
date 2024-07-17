@@ -72,7 +72,7 @@
 
 @media screen and (max-width: 768px) {
 	.container {
-		width: 99%;
+		width: 90%;
 		margin: 0 auto;
 	}
 	.btn {
@@ -85,5 +85,10 @@
 	}
 	.btn-secondary {
 		border: 0.13vw solid var(--main-color);
+	}
+}
+@media screen and (max-width: 576px) {
+	.container {
+		width: 98%;
 	}
 }
