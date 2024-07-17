@@ -92,3 +92,13 @@ input {
     --small-fs: 1.4vw;
   }
 }
+
+@media screen and (max-width: 576px) {
+  :root {
+    --biggest-fs: 8.68vw; /* 96px */
+    --bigger-fs: 7.29vw;  /* 60px */
+    --big-fs: 5.2vw;
+    --normal-fs: 3.47vw;
+    --small-fs: 2.77vw;
+  }
+}

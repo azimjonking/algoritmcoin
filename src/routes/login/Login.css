@@ -54,6 +54,7 @@
   font-size: var(--bigger-fs);
   color: var(--text-color);
   font-family: "SF Pro heavy";
+  text-shadow: 0.13vw 0.13vw 0.5vw #000;
 }
 
 .login-form__subtitle {
@@ -61,6 +62,7 @@
   font-size: 1.3vw;
   font-family: "SF Pro regular";
   color: var(--primary-color);
+  text-shadow: 0.13vw 0.13vw 0.5vw #000;
 }
 
 .login-form__container {
@@ -162,8 +164,9 @@
 
 @media screen and (max-width: 576px) {
   .login {
-    justify-content: center;
-    gap: 20vw;
+    padding-bottom: 10vw;
+    justify-content: flex-end;
+    gap: 10vw;
   }
 
   .login-header .section-title {
@@ -171,14 +174,17 @@
   }
 
   .login-header .section-subtitle {
-    margin-top: 5vw;
+    margin-top: 3vw;
     text-align: center;
   }
 
   .login-form {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
+    margin-top: 8vw;
+    padding: 5vw;
   }
+ 
 
   .login-form .coin-bg {
     width: 80vw;
@@ -186,8 +192,30 @@
     right: -20vw;
   }
 
+  .login-form__subtitle {
+    width: 80%;
+    font-size: 3.47vw;
+  }
+
+  .login-form__container {
+    margin-top: 3.47vw;
+    gap: 2vw;
+  }
+
   .login-form__container > input,
   .login-form__container > button {
     width: 100%;
+  }
+
+  .login-form__container > input {
+    padding: 3.47vw;
+    border-radius: 3.47vw;
+    border: 0.1736vw solid #ffffff10;
+    font-size: 3.47vw;
+  }
+  .login-form__container > p {
+    font-size: 3.47vw;
+    letter-spacing: 0.17vw;
+    text-align: justify;
   }
 }

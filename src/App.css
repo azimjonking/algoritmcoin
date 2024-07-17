@@ -14,6 +14,7 @@
 	font-size: var(--biggest-fs);
 	color: var(--text-color);
 	font-family: 'SF Pro black';
+  text-shadow: 0.13vw 0.13vw 0.5vw #000;
 }
 
 .section-title span {
@@ -24,6 +25,7 @@
 	font-size: var(--big-fs);
 	color: var(--text-color);
 	font-family: 'SF Pro medium';
+  text-shadow: 0.13vw 0.13vw 0.5vw #000;
 }
 
 .btn {
@@ -36,7 +38,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 0.52vw;
 }
 
 .btn-primary {
@@ -65,4 +67,23 @@
 	color: #eee !important;
 	border-color: gray !important;
 	cursor: not-allowed !important;
+}
+
+
+@media screen and (max-width: 768px) {
+	.container {
+		width: 99%;
+		margin: 0 auto;
+	}
+	.btn {
+		padding: 2.61vw 8.46vw;
+		border-radius: 3.91vw;
+		gap: 1.3vw;
+	}
+	.btn-primary {
+		border: 0.13vw solid var(--main-color);
+	}
+	.btn-secondary {
+		border: 0.13vw solid var(--main-color);
+	}
 }
