@@ -54,6 +54,9 @@ nav ul li a.userImg span {
 	ul .username {
 		display: none;
 	}
+	nav ul li a {
+		border-radius: 8px;
+	}
 }
 
 @media (max-width: 740px) {
@@ -96,6 +99,7 @@ ul li svg:nth-child(1) {
 @media (max-width: 390px) {
 	ul li a {
 		padding: 7px !important;
+		border-radius: 5px;
 		img {
 			width: 6px;
 		}

@@ -66,11 +66,6 @@
 	border-color: gray !important;
 	cursor: not-allowed !important;
 }
-@media (max-width: 777px) {
-	.btn {
-		padding: 0;
-	}
-}
 @media (max-width: 769px) {
 	.btn_top {
 		margin-top: 8px;
