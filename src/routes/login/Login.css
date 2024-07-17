@@ -164,9 +164,10 @@
 
 @media screen and (max-width: 576px) {
   .login {
+    padding-top: 10vw;
     padding-bottom: 10vw;
-    justify-content: flex-end;
-    gap: 10vw;
+    justify-content: center;
+    gap: 20vw;
   }
 
   .login-header .section-title {
