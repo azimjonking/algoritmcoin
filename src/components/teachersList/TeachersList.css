@@ -1,143 +1,111 @@
 .teacherList {
-  padding: 10.42vw 0 3.9vw;
+  padding: 8vw 0 3.9vw;
   height: 100dvh;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 .teachers-table {
   width: 100%;
   height: 100%;
-  display: grid;
-  overflow-y: scroll;
-  padding-right: 0.52vw;
-  position: relative;
 }
 
-.teachers-table::-webkit-scrollbar {
+.teachers-table tbody::-webkit-scrollbar {
   display: block;
   width: 1.19vw;
 }
 
-.teachers-table::-webkit-scrollbar-thumb {
+.teachers-table tbody::-webkit-scrollbar-thumb {
   border-radius: 1.04vw;
   background: rgba(135, 135, 135, 0.5);
 }
 
-.teachers-table::-webkit-scrollbar-track {
+.teachers-table tbody::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 1.04vw;
 }
 
-.teachers-table > thead,
-.teachers-table > tbody {
+.teachers-table tbody {
+  padding-right: 10px;
   width: 100%;
+  height: 100%;
+  display: grid;
+  gap: 13px;
+  position: relative;
+  overflow-y: scroll;
 }
 
-.teachers-table > thead {
+.teachers-table tbody tr {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 277px;
+  gap: 8px;
+  position: relative;
+  background: #000;
+}
+
+.teachers-table tbody tr:first-child {
+  width: 100%;
   position: sticky;
   top: 0;
   background: #000;
-  padding-bottom: 0.677vw;
+  z-index: 2;
 }
 
-.teachers-table > tbody {
-  display: grid;
-  gap: 0.677vw;
-}
-
-.teachers-table > thead > tr,
-.teachers-table > tbody > tr {
+.teachers-table tbody tr td:first-child {
+  padding: 10px 32px;
   width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 20vw;
-  gap: 0.52vw;
-}
-
-.teachers-table > thead > tr > .table-header,
-.teachers-table > tbody > tr > .tbody-data {
-  width: 100%;
-  padding: 0.52vw 1.67vw;
+  border-radius: 12px;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 0.625vw;
-}
-
-.teachers-table .table-header > table,
-.teachers-table .tbody-data > table {
-  width: 100%;
-}
-
-.teachers-table .table-header > table > thead,
-.teachers-table .tbody-data > table > tbody {
-  width: 100%;
-}
-
-.teachers-table .table-header > table > thead > tr,
-.teachers-table .tbody-data > table > tbody > tr {
-  width: 100%;
   display: grid;
-  grid-template-columns: 3fr 2fr 1fr 1fr;
-  gap: 0.52vw;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 20px;
 }
 
-.teachers-table .table-header > table > tr > td,
-.teachers-table .tbody-data > table > tr > td {
-  width: 100%;
-  text-align: left;
-  font-size: 0.99vw;
+.teachers-table tbody tr td:first-child span {
+  font-size: 19px;
   color: #fff;
   font-family: "SF Pro regular";
 }
 
-.studentsCount-link {
-  color: #fff;
-}
-
-.teachers-table > thead > tr > .role {
-  width: 100%;
-  padding: 0.52vw;
-  text-align: center;
-  font-size: 0.99vw;
-  color: #fff;
-  font-family: "SF Pro regular";
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 0.625vw;
-}
-
-.teachers-table > tbody > tr > .action {
-  width: 100%;
-}
-
-.teachers-table > tbody > tr > .action > table {
-  width: 100%;
-}
-
-.teachers-table > tbody > tr > .action > table > tbody {
-  width: 100%;
-}
-
-.teachers-table > tbody > tr > .action > table > tbody > tr {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.52vw;
-}
-
-.teachers-table > tbody > tr > .action td {
-  width: 100%;
+.teachers-table tbody tr .action {
+  width: 277px;
   height: 100%;
-  display: flex;
-}
-.teachers-table > tbody > tr > .action td > a,
-.teachers-table > tbody > tr > .action td > button {
-  width: 100%;
-  padding: 10px;
-  text-align: center;
-  font-size: 0.99vw;
-  color: #fff;
-  font-family: "SF Pro regular";
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 0.625vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  /* position: absolute; */
+  /* right: 0; */
+  /* top: 0; */
 }
 
-.teachers-table > tbody > tr > .action td > button {
+.teachers-table tbody tr .action-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  font-size: 19px;
+  color: #fff;
+  font-family: "SF Pro regular";
+}
+
+.teachers-table tbody tr .action button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 19px;
+  font-family: "SF Pro regular";
+  border-radius: 12px;
+}
+
+.teachers-table tbody tr .action .edit {
+  color: #fff;
+}
+
+.teachers-table tbody tr .action .delete {
   color: #CD0000;
 }

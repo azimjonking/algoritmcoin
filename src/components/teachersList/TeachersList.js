@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import axios from "axios";
 import "./TeachersList.css";
 
@@ -20,63 +19,32 @@ const TeachersList = () => {
   return (
     <div className="container teacherList" id="teacher">
       <table className="teachers-table">
-        <thead>
-          <tr>
-            <td className="table-header">
-              <table>
-                <thead>
-                  <tr>
-                    <td>Ism / Familiya</td>
-                    <td>Telefon raqam</td>
-                    <td>Fan</td>
-                    <td>O'quvchilar soni</td>
-                  </tr>
-                </thead>
-              </table>
-            </td>
-            <td className="role">Admin</td>
-          </tr>
-        </thead>
-
         <tbody>
+          <tr>
+            <td>
+              <span>Ism / Familya</span>
+              <span>Telefon raqam</span>
+              <span>Fan</span>
+              <span>O'quvchilar soni</span>
+            </td>
+            <td className='action action-header'>Action</td>
+          </tr>
+
           {teachers &&
             teachers.map((teacher, i) => {
               return (
                 <tr key={i}>
-                  <td className="tbody-data">
-                    <table>
-                      <tbody>
-                        <tr>
-                          <td>
-                            {teacher.firstName} {teacher.lastName}
-                          </td>
-                          <td>{teacher.phone}</td>
-                          <td>{teacher.subject}</td>
-                          <td>
-                            <Link
-                              to="/studentsList"
-                              className="studentsCount-link"
-                            >
-                              {teacher.studentsCount} ta
-                            </Link>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <td>
+                    <span>
+                      {teacher.firstName} {teacher.lastName}
+                    </span>
+                    <span>{teacher.phone}</span>
+                    <span>{teacher.subject}</span>
+                    <span>{teacher.studentsCount} ta</span>
                   </td>
                   <td className="action">
-                    <table>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <Link>O'zgartirish</Link>
-                          </td>
-                          <td>
-                            <button>O'chirish</button>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                    <button className='edit'>edit</button>
+                    <button className='delete'>delete</button>
                   </td>
                 </tr>
               );
