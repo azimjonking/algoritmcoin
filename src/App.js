@@ -19,7 +19,7 @@ function App() {
 	let isLogin = true
 	return (
 		<div className='App'>
-			<Header isLogin={isLogin} />
+			{/* <Header isLogin={isLogin} /> */}
 			<Routes>
 				<Route path='/' element={<Login />} />
 				<Route path='/' element={<Auth />}>

@@ -12,13 +12,15 @@
 .teacher-main__info {
   width: 100%;
   margin-left: 10%;
+  position: relative;
+  z-index: 4;
 }
 
 .teacher-main__btn {
-  margin-top: 46px;
+  margin-top: 2.39vw;
   display: inline-flex;
   align-items: center;
-  gap: 20px;
+  gap: 1.04vw;
 }
 
 .teacher-main__btn .scroll-icon {
@@ -30,10 +32,10 @@
 
 @keyframes scroll {
   0% {
-    transform: translateY(-5px);
+    transform: translateY(-0.26vw);
   }
   100% {
-    transform: translatey(5px);
+    transform: translatey(0.26vw);
   }
 }
 /* info end */
@@ -82,3 +84,79 @@
 }
 
 /* images end */
+
+
+@media screen and (max-width: 768px) {
+  .teacher-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* info start */
+
+  .teacher-main__btn {
+    margin-top: 5.99vw;
+    gap: 2.61vw;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateY(-0.65vw);
+    }
+    100% {
+      transform: translatey(0.65vw);
+    }
+  }
+  /* info end */
+  
+  /* images start */
+  .teacher-main__img {
+    align-items: center;
+  }
+
+  .teacher-main__img span {
+    background-image: url("./teacherShadow.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  .teacher-shadowImg {
+    display: none;
+    bottom: 29%;
+  }
+  .teacher-shadowImg img {
+    animation: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .teacher-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2vw;
+  }
+
+  .teacher-main__info {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teacher-main__info .section-title,
+  .teacher-main__info .section-subtitle {
+    text-align: center;
+  }
+  .teacher-main__img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .teacher-main__img span {
+    width: 90%;
+    margin-left: 5%;
+  }
+}

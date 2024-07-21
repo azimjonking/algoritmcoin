@@ -1,5 +1,5 @@
 .teacherList {
-  padding: 200px 0 75px;
+  padding: 10.42vw 0 3.9vw;
   height: 100dvh;
 }
 
@@ -8,23 +8,23 @@
   height: 100%;
   display: grid;
   overflow-y: scroll;
-  padding-right: 9px;
+  padding-right: 0.52vw;
   position: relative;
 }
 
 .teachers-table::-webkit-scrollbar {
   display: block;
-  width: 23px;
+  width: 1.19vw;
 }
 
 .teachers-table::-webkit-scrollbar-thumb {
-  border-radius: 20px;
+  border-radius: 1.04vw;
   background: rgba(135, 135, 135, 0.5);
 }
 
 .teachers-table::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
+  border-radius: 1.04vw;
 }
 
 .teachers-table > thead,
@@ -36,28 +36,28 @@
   position: sticky;
   top: 0;
   background: #000;
-  padding-bottom: 13px;
+  padding-bottom: 0.677vw;
 }
 
 .teachers-table > tbody {
   display: grid;
-  gap: 13px;
+  gap: 0.677vw;
 }
 
 .teachers-table > thead > tr,
 .teachers-table > tbody > tr {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 277px;
-  gap: 8px;
+  grid-template-columns: 1fr 20vw;
+  gap: 0.52vw;
 }
 
 .teachers-table > thead > tr > .table-header,
 .teachers-table > tbody > tr > .tbody-data {
   width: 100%;
-  padding: 10px 32px;
+  padding: 0.52vw 1.67vw;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
+  border-radius: 0.625vw;
 }
 
 .teachers-table .table-header > table,
@@ -75,14 +75,14 @@
   width: 100%;
   display: grid;
   grid-template-columns: 3fr 2fr 1fr 1fr;
-  gap: 10px;
+  gap: 0.52vw;
 }
 
 .teachers-table .table-header > table > tr > td,
 .teachers-table .tbody-data > table > tr > td {
   width: 100%;
   text-align: left;
-  font-size: 19px;
+  font-size: 0.99vw;
   color: #fff;
   font-family: "SF Pro regular";
 }
@@ -93,13 +93,13 @@
 
 .teachers-table > thead > tr > .role {
   width: 100%;
-  padding: 10px;
+  padding: 0.52vw;
   text-align: center;
-  font-size: 19px;
+  font-size: 0.99vw;
   color: #fff;
   font-family: "SF Pro regular";
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
+  border-radius: 0.625vw;
 }
 
 .teachers-table > tbody > tr > .action {
@@ -118,7 +118,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 8px;
+  gap: 0.52vw;
 }
 
 .teachers-table > tbody > tr > .action td {
@@ -131,14 +131,13 @@
   width: 100%;
   padding: 10px;
   text-align: center;
-  font-size: 19px;
+  font-size: 0.99vw;
   color: #fff;
   font-family: "SF Pro regular";
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
+  border-radius: 0.625vw;
 }
 
 .teachers-table > tbody > tr > .action td > button {
   color: #CD0000;
 }
-
