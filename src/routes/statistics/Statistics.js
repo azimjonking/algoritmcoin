@@ -26,143 +26,145 @@ const Statistics = () => {
           </p>
         </div>
 
-        <div className="statistics-data">
-          <div className="data-header">
-            <div className="data-header__content">
-              <img src="./assets/lider.png" alt="img" />
-              <p>Liderlar</p>
+        <div className="statistics-data__container">
+          <div className="statistics-data">
+            <div className="data-header">
+              <div className="data-header__content">
+                <img src="./assets/lider.png" alt="img" />
+                <p>Liderlar</p>
+              </div>
+              <div className="data-header__content">
+                <select name="" id="">
+                  <option value="">Beta-oylar</option>
+                </select>
+              </div>
+              <div className="data-header__content">
+                <select name="" id="">
+                  <option value="">Fanlar Bo'yicha</option>
+                </select>
+              </div>
             </div>
-            <div className="data-header__content">
-              <select name="" id="">
-                <option value="">Beta-oylar</option>
-              </select>
+            <div className="data-container">
+              <table>
+                <thead>
+                  <tr>
+                    <td>Joy</td>
+                    <td>Reyting</td>
+                    <td>Ism / Familiya</td>
+                    <td>Fanlar</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td className="lider">
+                      <img src="./assets/lider.png" alt="img" />
+                      <span>10.642</span>
+                    </td>
+                    <td>O'tkir Eshmatov</td>
+                    <td>Eng / Math / IT</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td className="lider">
+                      <img src="./assets/lider.png" alt="img" />
+                      <span>10.642</span>
+                    </td>
+                    <td>Muxammadsoliyev Muhammadalixonbek</td>
+                    <td>Eng / Math / IT</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td className="lider">
+                      <img src="./assets/lider.png" alt="img" />
+                      <span>10.642</span>
+                    </td>
+                    <td>O'tkir Eshmatov</td>
+                    <td>Eng / Math / IT</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td className="lider">
+                      <img src="./assets/lider.png" alt="img" />
+                      <span>10.642</span>
+                    </td>
+                    <td>O'tkir Eshmatov</td>
+                    <td>Eng / Math / IT</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td className="lider">
+                      <img src="./assets/lider.png" alt="img" />
+                      <span>10.642</span>
+                    </td>
+                    <td>O'tkir Eshmatov</td>
+                    <td>Eng / Math / IT</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td className="lider">
+                      <img src="./assets/lider.png" alt="img" />
+                      <span>10.642</span>
+                    </td>
+                    <td>O'tkir Eshmatov</td>
+                    <td>Eng / Math / IT</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td className="lider">
+                      <img src="./assets/lider.png" alt="img" />
+                      <span>10.642</span>
+                    </td>
+                    <td>O'tkir Eshmatov</td>
+                    <td>Eng / Math / IT</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td className="lider">
+                      <img src="./assets/lider.png" alt="img" />
+                      <span>10.642</span>
+                    </td>
+                    <td>O'tkir Eshmatov</td>
+                    <td>Eng / Math / IT</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td className="lider">
+                      <img src="./assets/lider.png" alt="img" />
+                      <span>10.642</span>
+                    </td>
+                    <td>O'tkir Eshmatov</td>
+                    <td>Eng / Math / IT</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td className="lider">
+                      <img src="./assets/lider.png" alt="img" />
+                      <span>10.642</span>
+                    </td>
+                    <td>O'tkir Eshmatov</td>
+                    <td>Eng / Math / IT</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
-            <div className="data-header__content">
-              <select name="" id="">
-                <option value="">Fanlar Bo'yicha</option>
-              </select>
-            </div>
-          </div>
-          <div className="data-container">
-            <table>
-              <thead>
-                <tr>
-                  <td>Joy</td>
-                  <td>Reyting</td>
-                  <td>Ism / Familiya</td>
-                  <td>Fanlar</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>1</td>
-                  <td className="lider">
-                    <img src="./assets/lider.png" alt="img" />
-                    <span>10.642</span>
-                  </td>
-                  <td>O'tkir Eshmatov</td>
-                  <td>Eng / Math / IT</td>
-                </tr>
-                <tr>
-                  <td>2</td>
-                  <td className="lider">
-                    <img src="./assets/lider.png" alt="img" />
-                    <span>10.642</span>
-                  </td>
-                  <td>Muxammadsoliyev Muhammadalixonbek</td>
-                  <td>Eng / Math / IT</td>
-                </tr>
-                <tr>
-                  <td>3</td>
-                  <td className="lider">
-                    <img src="./assets/lider.png" alt="img" />
-                    <span>10.642</span>
-                  </td>
-                  <td>O'tkir Eshmatov</td>
-                  <td>Eng / Math / IT</td>
-                </tr>
-                <tr>
-                  <td>4</td>
-                  <td className="lider">
-                    <img src="./assets/lider.png" alt="img" />
-                    <span>10.642</span>
-                  </td>
-                  <td>O'tkir Eshmatov</td>
-                  <td>Eng / Math / IT</td>
-                </tr>
-                <tr>
-                  <td>5</td>
-                  <td className="lider">
-                    <img src="./assets/lider.png" alt="img" />
-                    <span>10.642</span>
-                  </td>
-                  <td>O'tkir Eshmatov</td>
-                  <td>Eng / Math / IT</td>
-                </tr>
-                <tr>
-                  <td>6</td>
-                  <td className="lider">
-                    <img src="./assets/lider.png" alt="img" />
-                    <span>10.642</span>
-                  </td>
-                  <td>O'tkir Eshmatov</td>
-                  <td>Eng / Math / IT</td>
-                </tr>
-                <tr>
-                  <td>7</td>
-                  <td className="lider">
-                    <img src="./assets/lider.png" alt="img" />
-                    <span>10.642</span>
-                  </td>
-                  <td>O'tkir Eshmatov</td>
-                  <td>Eng / Math / IT</td>
-                </tr>
-                <tr>
-                  <td>8</td>
-                  <td className="lider">
-                    <img src="./assets/lider.png" alt="img" />
-                    <span>10.642</span>
-                  </td>
-                  <td>O'tkir Eshmatov</td>
-                  <td>Eng / Math / IT</td>
-                </tr>
-                <tr>
-                  <td>9</td>
-                  <td className="lider">
-                    <img src="./assets/lider.png" alt="img" />
-                    <span>10.642</span>
-                  </td>
-                  <td>O'tkir Eshmatov</td>
-                  <td>Eng / Math / IT</td>
-                </tr>
-                <tr>
-                  <td>10</td>
-                  <td className="lider">
-                    <img src="./assets/lider.png" alt="img" />
-                    <span>10.642</span>
-                  </td>
-                  <td>O'tkir Eshmatov</td>
-                  <td>Eng / Math / IT</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <div className="data-footer">
-            <div className="data-footer__time">
-              <p>12:42, 2024, 17-avgust</p>
-              <button>
-                <GrPowerCycle className="icon" />
-              </button>
-            </div>
-            <div className="data-footer__links">
-              <button className="showme">
-                <MdOutlineRemoveRedEye className="icon" />
-                <span>Meni ko'rsating</span>
-              </button>
-              <button className="toplink">
-                <FaArrowUp className="icon" />
-                <span>Yuqoriga</span>
-              </button>
+            <div className="data-footer">
+              <div className="data-footer__time">
+                <p>12:42, 2024, 17-avgust</p>
+                <button>
+                  <GrPowerCycle className="icon" />
+                </button>
+              </div>
+              <div className="data-footer__links">
+                <button className="showme">
+                  <MdOutlineRemoveRedEye className="icon" />
+                  <span>Meni ko'rsating</span>
+                </button>
+                <button className="toplink">
+                  <FaArrowUp className="icon" />
+                  <span>Yuqoriga</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
