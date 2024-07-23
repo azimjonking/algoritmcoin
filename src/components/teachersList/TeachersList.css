@@ -219,6 +219,7 @@
   .teacherList {
     padding-left: 4%;
     padding-right: 4%;
+    padding-top: 30px;
   }
   .teachers-table tbody {
     gap: 5.2vw;
