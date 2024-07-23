@@ -22,12 +22,13 @@ const TeachersList = () => {
         <tbody>
           <tr>
             <td>
-              <span>Ism / Familya</span>
-              <span>Telefon raqam</span>
-              <span>Fan</span>
-              <span>O'quvchilar soni</span>
+              <span datacell="№">№</span>
+              <span datacell="Ism / Familiya">Ism / Familya</span>
+              <span datacell="Telefon raqam">Telefon raqam</span>
+              <span datacell="Fan">Fan</span>
+              <span datacell="O'quvchilar soni">O'quvchilar soni</span>
             </td>
-            <td className='action action-header'>Action</td>
+            <td className="action action-header">Action</td>
           </tr>
 
           {teachers &&
@@ -35,16 +36,19 @@ const TeachersList = () => {
               return (
                 <tr key={i}>
                   <td>
-                    <span>
+                    <span datacell="№">{i+1}</span>
+                    <span datacell="Ism / Familiya">
                       {teacher.firstName} {teacher.lastName}
                     </span>
-                    <span>{teacher.phone}</span>
-                    <span>{teacher.subject}</span>
-                    <span>{teacher.studentsCount} ta</span>
+                    <span datacell="Telefon raqam">{teacher.phone}</span>
+                    <span datacell="Fan">{teacher.subject}</span>
+                    <span datacell="O'quvchilar soni">
+                      {teacher.studentsCount} ta
+                    </span>
                   </td>
                   <td className="action">
-                    <button className='edit'>edit</button>
-                    <button className='delete'>delete</button>
+                    <button className="edit">edit</button>
+                    <button className="delete">delete</button>
                   </td>
                 </tr>
               );

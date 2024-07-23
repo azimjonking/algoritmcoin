@@ -26,11 +26,11 @@
 }
 
 .teachers-table tbody {
-  padding-right: 10px;
+  padding-right: 0.52vw;
   width: 100%;
   height: 100%;
   display: grid;
-  gap: 13px;
+  gap: 0.677vw;
   position: relative;
   overflow-y: scroll;
 }
@@ -39,8 +39,8 @@
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 277px;
-  gap: 8px;
+  grid-template-columns: 1fr 10.42vw;
+  gap: 0.42vw;
   position: relative;
   background: #000;
 }
@@ -54,27 +54,27 @@
 }
 
 .teachers-table tbody tr td:first-child {
-  padding: 10px 32px;
+  padding: 0.52vw 1.67vw;
   width: 100%;
-  border-radius: 12px;
+  border-radius: 0.625vw;
   background: rgba(255, 255, 255, 0.1);
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: auto 1.5fr 1.5fr 1fr 1fr;
+  gap: 1.04vw;
 }
 
 .teachers-table tbody tr td:first-child span {
-  font-size: 19px;
+  font-size: 0.99vw;
   color: #fff;
   font-family: "SF Pro regular";
 }
 
 .teachers-table tbody tr .action {
-  width: 277px;
+  width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 8px;
+  gap: 0.42vw;
   /* position: absolute; */
   /* right: 0; */
   /* top: 0; */
@@ -85,8 +85,8 @@
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  font-size: 19px;
+  border-radius: 0.625vw;
+  font-size: 0.99vw;
   color: #fff;
   font-family: "SF Pro regular";
 }
@@ -97,9 +97,9 @@
   align-items: center;
   justify-content: center;
   background: rgba(255, 255, 255, 0.1);
-  font-size: 19px;
+  font-size: 0.99vw;
   font-family: "SF Pro regular";
-  border-radius: 12px;
+  border-radius: 0.625vw;
 }
 
 .teachers-table tbody tr .action .edit {
@@ -107,5 +107,153 @@
 }
 
 .teachers-table tbody tr .action .delete {
-  color: #CD0000;
+  color: #cd0000;
+}
+
+@media screen and (max-width: 1220px) {
+  .teacherList {
+    padding: 120px 0 7.81vw;
+  }
+
+  .teachers-table tbody::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  .teachers-table tbody::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+  }
+
+  .teachers-table tbody::-webkit-scrollbar-track {
+    border-radius: 8px;
+  }
+
+  .teachers-table tbody {
+    padding-right: 0.81vw;
+    gap: 1.06vw;
+  }
+
+  .teachers-table tbody tr {
+    grid-template-columns: 1fr 15vw;
+    gap: 1.04vw;
+  }
+
+  .teachers-table tbody tr td:first-child {
+    padding: 0.81vw 1.64vw;
+    border-radius: 0.81vw;
+    gap: 1.64vw;
+  }
+
+  .teachers-table tbody tr td:first-child span {
+    font-size: 1.82vw;
+  }
+
+  .teachers-table tbody tr .action {
+    gap: 1.04vw;
+  }
+
+  .teachers-table tbody tr .action-header {
+    border-radius: 0.81vw;
+    font-size: 1.82vw;
+  }
+
+  .teachers-table tbody tr .action button {
+    font-size: 1.82vw;
+    border-radius: 0.81vw;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .teachers-table tbody tr:first-child {
+    display: none;
+  }
+  .teachers-table tbody {
+    display: grid;
+    gap: 3.91vw;
+  }
+  .teachers-table tbody tr {
+    grid-template-columns: 1fr;
+    gap: 2.08vw;
+  }
+  .teachers-table tbody tr td:first-child {
+    padding: 2.61vw;
+    border-radius: 1.56vw;
+    grid-template-columns: 1fr;
+    gap: 2.61vw;
+  }
+
+  .teachers-table tbody tr td:first-child span {
+    font-size: 2.47vw;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    color: #ffffff90;
+  }
+
+  .teachers-table tbody tr td:first-child span::before {
+    content: attr(datacell) ": ";
+    letter-spacing: 1px;
+    font-size: 2.47vw;
+    color: #ffffff;
+    font-family: "SF Pro regular";
+    text-transform: capitalize;
+    opacity: 0.9;
+  }
+
+  .teachers-table tbody tr .action {
+    gap: 2.08vw;
+  }
+
+  .teachers-table tbody tr .action-header {
+    padding: 1.3vw;
+    border-radius: 1.56vw;
+    font-size: 2.47vw;
+  }
+
+  .teachers-table tbody tr .action button {
+    padding: 1.2vw;
+    font-size: 2.47vw;
+    border-radius: 1.56vw;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .teacherList {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .teachers-table tbody {
+    gap: 5.2vw;
+  }
+  .teachers-table tbody tr {
+    gap: 2.77vw;
+  }
+  .teachers-table tbody tr td:first-child {
+    padding: 3.47vw;
+    border-radius: 2.08vw;
+    gap: 3.47vw;
+  }
+
+  .teachers-table tbody tr td:first-child span {
+    font-size: 3.47vw;
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .teachers-table tbody tr td:first-child span::before {
+    font-size: 3.47vw;
+  }
+
+  .teachers-table tbody tr .action {
+    gap: 2.77vw;
+  }
+
+  .teachers-table tbody tr .action-header {
+    padding: 1.73vw;
+    border-radius: 2.08vw;
+    font-size: 3.47vw;
+  }
+
+  .teachers-table tbody tr .action button {
+    padding: 1.73vw;
+    font-size: 3.47vw;
+    border-radius: 2.08vw;
+  }
 }
