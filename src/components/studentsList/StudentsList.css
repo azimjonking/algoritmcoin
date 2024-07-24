@@ -1,5 +1,5 @@
 .studentsList {
-  padding: 200px 0 75px;
+  padding: 150px 0 75px;
   height: 100dvh;
 }
 
@@ -10,23 +10,24 @@
   display: grid;
   align-content: flex-start;
   overflow-y: scroll;
-  padding-right: 9px;
+  padding-right: 10px;
   position: relative;
+  border-collapse: collapse;
 }
 
 .students-table::-webkit-scrollbar {
   display: block;
-  width: 23px;
+  width: 10px;
 }
 
 .students-table::-webkit-scrollbar-thumb {
-  border-radius: 20px;
+  border-radius: 8px;
   background: rgba(135, 135, 135, 0.5);
 }
 
 .students-table::-webkit-scrollbar-track {
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
+  border-radius: 8px;
 }
 
 .students-table > thead,
@@ -46,8 +47,8 @@
 .students-table > tbody > tr {
   width: 100%;
   display: grid;
-  grid-template-columns: 3fr 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 8px;
+  grid-template-columns: 10px 2.5fr 2fr 1fr 1.5fr 1fr 1fr 200px;
+  gap: 30px;
   border-radius: 12px;
   background: rgba(255, 255, 255, 0.1);
   padding: 10px 30px;
@@ -60,30 +61,126 @@
   font-size: 19px;
   color: #fff;
   font-family: "SF Pro regular";
+  display: flex;
+  align-items: center;
 }
 
-.students-table > thead > tr > td > select {
-  background: none;
-  border: none;
-  outline: none;
-  color: #fff;
-}
+.students-table > thead > tr > td > select,
 .students-table > tbody > tr > td > select {
-  width: 100%;
-  background: #D9D9D920;
+  width: 80%;
+  /* padding: 10px; */
+  background: #1a1a1a;
   border: none;
   outline: none;
   color: #fff;
+  font-size: 19px;
 }
 
 .students-table > thead > tr > td > select > option,
 .students-table > tbody > tr > td > select > option {
-  color: #333;
-  background-color: transparent;
+  color: #fff !important;
+  padding-top: 10px;
+}
+
+.students-table > tbody > tr > td.add-coin {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.students-table > tbody > tr > td.add-coin input {
+  width: 60%;
+  background: #D9D9D920;
   padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 19px;
+}
+
+.students-table > tbody > tr > td.add-coin > button {
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  border: none;
+  background: #D9D9D920;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.students-table > tbody > tr > td.add-coin > button:hover {
+  background: green;
+  opacity: 1;
+}
+
+.students-table > tbody > tr > td.add-coin > button:active {
+  background: #D9D9D920;
+  opacity: 0.8;
+}
+
+
+.students-table > tbody > tr > td.add-coin > button .icon {
+  color: #fff;
+  font-size: 26px;
+  opacity: 0.8;
+}
+
+.students-table > thead > tr > td.action {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.students-table > tbody > tr > td.action {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
 }
 
 .students-table > tbody {
   display: grid;
   gap: 13px;
+}
+
+.students-table > tbody > tr > td.action a,
+.students-table > tbody > tr > td.action button {
+  padding: 6px 20px;
+  border-radius: 10px;
+  background: #D9D9D920;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  font-family: "SF Pro regular";
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+.students-table > tbody > tr > td.action a {
+  color: #fff;
+}
+
+.students-table > tbody > tr > td.action a:hover {
+  background: green;
+}
+
+.students-table > tbody > tr > td.action button {
+  color: #CD0000;
+}
+
+.students-table > tbody > tr > td.action button:hover {
+  background: #CD0000;
+  color: #fff;
+}
+
+.students-table > tbody > tr > td.action a:active {
+  color: #fff;
+  background: #D9D9D920;
+}
+
+
+.students-table > tbody > tr > td.action button:active {
+  color: #CD0000;
+  background: #D9D9D920;
 }

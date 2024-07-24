@@ -11,6 +11,8 @@
 .students-main__info {
   width: 100%;
   margin-left: 10%;
+  position: relative;
+  z-index: 2;
 }
 
 .students-main__btn {
@@ -50,6 +52,7 @@
   position: absolute;
   right: 0;
   bottom: 0;
+  overflow: hidden;
 }
 
 .students-main__imgFrame {
